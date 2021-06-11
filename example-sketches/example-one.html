@@ -10,6 +10,19 @@
       padding: 0;
       margin: 0;
     }
+
+    canvas {
+    display: block;
+    }
+
+    #container {
+      margin: 0 auto;
+      width: 600px;
+    }
+
+    #canvas {
+      margin-top: 50px;
+    }
   </style>
   <script src="../script/p5.js"></script>
   <script src="../script/p5.sound.js"></script>
@@ -17,8 +30,10 @@
 </head>
 
 <body>
-  <main>
-  </main>
+  <div id="container">
+    <div id="canvas"></div>
+    <div id="btn"></div>
+  </div>
 </body>
 
 </html>
