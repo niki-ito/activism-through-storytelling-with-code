@@ -1,6 +1,8 @@
 # Acitvism Through Storytelling with Code
 ## Pages
-p5.js sketches: <a href ="https://niki-ito.github.io/Codeing/example-sketches/example-one.html" target = "_blank"> example 1 </a>
+p5.js sketches: 
+<a href ="https://niki-ito.github.io/Codeing/example-sketches/example-one.html" target = "_blank"> example 1 </a>
+<a href ="https://niki-ito.github.io/Codeing/example-sketches/example-two.html" target = "_blank"> example 2 </a>
 
 ## Weekly Documentations
 Community bonding week: 
@@ -10,6 +12,7 @@ Community bonding week:
 - Develop the concept for the Visual Narrative website. (speak with mentors, school professors, artists, Asian community members, and other helpful individuals)
 - Work on choosing narrative subjects and visualizing techniques for the Visual Narrative.
 - Connect with some members of GSoC.
+- Use Asana for process documentation and mentor reviews.
 
 Week 1:
 - Organize weekly cadence with mentors.
