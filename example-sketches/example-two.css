@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nova Mono', monospace;
+    color: rgb(93, 100, 201);
+  }
+  canvas {
+    display: block;
+  }
+  
+  #container {
+    margin: 0 auto;
+    width: 600px;
+    grid-template-rows: 90% auto;
+    grid-template-areas: "canvas" "footer";
+  }
+  
+  #canvas {
+    margin-top: 50px;
+    grid-area:canvas;
+  }
+  
+  footer {
+    grid-area: footer;
+    margin-bottom: 50px;
+  }
+  
+  ul li {
+    display: inline;
+  }
+  
+  .btn {
+    border: 2px solid rgb(93, 100, 201);
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  #texts {
+    margin-left: -40px;
+  }
+  
+  /* @media only screen and (max-width: 600px) {
+    #container {
+    width: 100%;
+    }
+  } */
