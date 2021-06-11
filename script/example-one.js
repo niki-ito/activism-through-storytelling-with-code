@@ -41,6 +41,14 @@ function setup() {
   canvas = createCanvas(400, 400);
   canvas.style("width", "100%");
   canvas.style("height", "auto");
+  canvas.parent("canvas");
+  
+  resetSketch();
+  let btn = createButton("RESET");
+  btn.mousePressed(resetSketch);
+  btn.style("margin", "20px 0");
+  btn.style("position", "absolute");
+  btn.style("left", "49%");
 }
 
 function draw() {
@@ -322,8 +330,21 @@ function draw() {
   rect(vaseX - 23, move1 - 13, 2, 10);
   rect(vaseX - 27, move1 - 13, 2, 20);
 
+}
 
+function resetSketch(){
+//highlightMovement
+ pointX = 400
+ pointY = 0
+ corner = 280
+//highlightColor
+ colG = 255
+ colB = 255
 
+//atmosphere
+ atO = 0
 
+//moving shadow
+ shadeX = 100
 
 }
