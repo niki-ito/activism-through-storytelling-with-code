@@ -38,15 +38,15 @@ let Y = document.getElementById('btn-y');
 
 function preload() {
 
-  chime = loadSound('../assets/audio/example-two/chime.wav')
-  bubbles = loadSound('../assets/audio/example-two/bubbles.wav')
-  piano = loadSound('../assets/audio/example-two/ta taa ta ta ta taa.wav')
-  river = loadSound('../assets/audio/example-two/river.wav')
-  kids = loadSound('../assets/audio/example-two/kids.wav')
-  zoom = loadSound('../assets/audio/example-two/zoom.wav')
+  chime = loadSound('../assets/audio/example-2/chime.wav')
+  bubbles = loadSound('../assets/audio/example-2/bubbles.wav')
+  piano = loadSound('../assets/audio/example-2/ta taa ta ta ta taa.wav')
+  river = loadSound('../assets/audio/example-2/river.wav')
+  kids = loadSound('../assets/audio/example-2/kids.wav')
+  zoom = loadSound('../assets/audio/example-2/zoom.wav')
 
-  wave = loadImage('../assets/images/example-two/wave.png')
-  trees = loadImage('../assets/images/example-two/trees.png')
+  wave = loadImage('../assets/images/example-2/wave.png')
+  trees = loadImage('../assets/images/example-2/trees.png')
 
 }
 
