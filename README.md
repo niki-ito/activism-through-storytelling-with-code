@@ -17,9 +17,14 @@ Community bonding week:
 
 Week 1:
 - Organize weekly cadence with mentors.
-- Order audio recording device.
+- Order an audio recording device.
 - Continue to develop the concept for the Visual Narrative website. 
 - Continue to work on choosing narrative subjects and visualizing techniques for the Visual Narrative.
-- Build community for project outreach.
+- Build a community for project outreach.
 - Post example sketches on GitHub for practice.
 
+Week 2:
+- Develop a visual style for the Visual Narrative.
+- Take part in Asian Community events.
+- Practice using the audio recording device.
+- Schedule meetings with subjects to record conversations.
