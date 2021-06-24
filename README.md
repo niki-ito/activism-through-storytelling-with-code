@@ -1,5 +1,5 @@
 # Acitvism Through Storytelling with Code
-## Pages
+## Examples
 p5.js sketches: <br>
 <a href ="https://niki-ito.github.io/Codeing/example-sketches/example-1.html" target = "_blank"> example 1 </a><br>
 <a href ="https://niki-ito.github.io/Codeing/example-sketches/example-2.html" target = "_blank"> example 2 </a><br>
@@ -28,3 +28,10 @@ Week 2:
 - Take part in Asian Community events.
 - Practice using the audio recording device.
 - Schedule meetings with subjects to record conversations.
+
+Week 3:
+- Continue to develop a visual style for the Narrative.
+- Record first conversation.
+- Organize audio recording and start editing.
+- Start to wireframe the Visual Narrative website.
+- Schedule other meetings to record more conversations. 
