@@ -35,3 +35,12 @@ Week 3:
 - Organize audio recording and start editing.
 - Start to wireframe the Visual Narrative website.
 - Schedule other meetings to record more conversations. 
+
+Week 4:
+- Find examples for web design to further envision the wireframing. 
+- Find examples for audio visualization. 
+- Experiment with audio visualization in p5.js (FFT).
+- Receive feedback on wireframing.
+- Receive feedback for the finalized audio recording for the first conversation.
+- Develop a title for the Visual Narrative website.
+
