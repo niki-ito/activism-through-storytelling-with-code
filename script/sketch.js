@@ -1,9 +1,37 @@
+let canvas;
+let span;
+let spanColor;
+
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0,0);
+  canvas.style('z-index', '-1');
+  canvas.style('position', 'fixed');
+  span = select("span");
+
+  noCursor();
 }
 
 function draw() {
-  background(26,50,100);
-  ellipse(mouseX, mouseY, 30,30);
-  rect(10,10,100);
+  background(255, 255, 245);
+  changeSpanColor();
+  span.style("color", spanColor)
+  drawCursor();
+}
+
+function drawCursor(){
+  fill(233, 255, 168);
+  noStroke();
+  ellipse(mouseX, mouseY, 20,20);
+}
+
+function changeSpanColor(){
+  let r = mouseX/5;
+  let g = 100;
+  let b = mouseY/3;
+  spanColor = "rgb(" + r + "," + g + "," + b + ")";
 }

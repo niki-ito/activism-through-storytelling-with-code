@@ -4,13 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>p5.js example</title>
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-    }
-  </style>
+  <title>About Me, You, & Us</title>
+  <link link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
   <script src="./script/p5.js"></script>
   <script src="./script/p5.sound.js"></script>
   <script src="./script/sketch.js"></script>
@@ -18,7 +17,39 @@
 
 <body>
   <main>
+    <div id = mainText>
+    <h1>About me, <span>you</span>, & us</h1>
+    <p>Listen to conversations between people from the 
+      Asian community to learn about ME (the speaker), YOU (the listener), 
+      and US (the community). <br><br>
+      This project aims to highlight narratives that are intimate and less represented 
+      in mainstram media. With this, I hope to cultivate futher understanding and compassion for the Asian
+    community in the United States.    </p>
+    	<nav>
+        <ul>
+          <li><a href="contact.html" class="btn">Contact Creator</a></li>
+          <li><a href="about.html" class="btn">Learn more about this project</a></li>
+        </ul>
+      </nav>
+  </div>
   </main>
+  <section id = "main_thumbnail">
+    <div class = "thumbnails">
+      <a href = "visual-narrative/hatsue&niki.html">
+        <img src = "assets/images/visualNarrative/placeholder.png">
+        <h3 class = "imgTitle">Hatsue & Niki</h3></a>
+    </div>
+    <div class = "thumbnails">
+      <a href = "visual-narrative/joe&hatsue.html">
+        <img src = "assets/images/visualNarrative/placeholder_2.png">
+        <h3 class = "imgTitle">Joe & Hatsue</h3></a>
+    </div>
+    <div class = "thumbnails">
+      <a href = "about.html">
+        <img src = "assets/images/visualNarrative/placeholder_3.png">
+        <h3 class = "imgTitle">Miwa & Niki</h3></a>
+    </div>
+  </section>
 </body>
 
 </html>
