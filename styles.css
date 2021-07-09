@@ -15,6 +15,7 @@ body {
         font-size: 1.1rem;
         font-family: 'Quicksand', sans-serif;
         width: 600px;
+        line-height: 1.5rem;
     }
 
     #mainText h1 {
@@ -62,7 +63,7 @@ body {
     position: relative;
     float: right;
     margin: 100px 0px;
-    margin-right: 150px;
+    margin-right: 170px;
 }
 
     #main_thumbnail img{
@@ -71,7 +72,7 @@ body {
         display: block;
         width: 300px;
         height: 300px;
-        padding-bottom: 50px;
+        padding-bottom: 80px;
     }
 
     .thumbnails img:hover{
@@ -133,23 +134,16 @@ body {
         }
 
         #main_thumbnail img{
-            margin-right: 50px;
+            margin-right: 80px;
         }
 
         .imgTitle {
-            top: 32%;
-            left: 43%;
+            top: 30%;
+            left: 40%;
     }
 }
 
     @media only screen and (max-width: 600px) {
-        #mainText {
-            text-align: center;
-            position: relative;
-            padding-left: 0px;
-            margin: 0 auto;
-            width: 100%;
-        }
 
         #mainText h1 {
             font-size: 3rem;
@@ -164,11 +158,15 @@ body {
         }
 
         #mainText .btn {
-            font-size: 0.5rem;
+            font-size: 0.7rem;
         }
 
         nav ul {
             padding-top: 20px;
+        }
+
+        nav li:not(:last-child){
+            margin-right: 5px;
         }
 
         #main_thumbnail {
@@ -189,6 +187,6 @@ body {
 
         .imgTitle {
             top: 32%;
-            left: 43%;
+            left: 50%;
     }
 }
