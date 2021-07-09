@@ -3,7 +3,7 @@ let img;
 
 function preload() {
   myAudio = loadSound("../assets/audio/visual-narrative/smells.mp3");
-  img = loadImage("../assets/images/visual-narrative/placeholder/placeholder-3.png");
+  img = loadImage("../assets/images/visual-narrative/placeholder/placeholder_3.png");
 }
 
 function setup() {
