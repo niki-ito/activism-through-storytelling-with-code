@@ -36,7 +36,7 @@ Week 2:
 Week 3:
 - Continue to develop a visual style for the Narrative.
 - Record first conversation.
-- Organize audio recording and start editing.
+- Organize audio recording and start editing with Adobe Audition.
 - Start to wireframe the Visual Narrative website.
 - Schedule other meetings to record more conversations. 
 
@@ -48,3 +48,10 @@ Week 4:
 - Receive feedback for the finalized audio recording for the first conversation.
 - Develop a title for the Visual Narrative website.
 
+Week 5:
+- Transcribe the edited audio recordings.
+- Photoshoot for Hatsue & Niki's audio visualization. 
+- Choose an audio visualization technique in p5.js (FFT).
+- Develop the HTML and CSS for the Visual Narrative website with responsive design.
+- Create mockups to experiment with the design of the website in Adobe Photoshop.
+- Record and photograph the second conversation.
