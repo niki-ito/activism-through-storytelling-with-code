@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="example-4.css">
+    <meta charset="utf-8" />
+    <style>
+      #defaultCanvas0{
+			  position: absolute; /*I added basic positioning to show the canvas could overlap the other canvas*/
+ 			 	top: 0;
+  			left: 0;
+				z-index:10;
+      }
+			#defaultCanvas1{
+			  position: absolute; /*I added basic positioning to show the canvas could overlap the other canvas*/
+				z-index:20;
+      }
+    </style>
+  </head>
+  <body>
+
+  
+    <script src="../script/p5.js"></script>
+    <script> 
+   
+		// This video from the coding train explains this https://www.youtube.com/watch?v=Su792jEauZg&t=765s
+    // More info on Global vs Instance mode can be found here: https://github.com/processing/p5.js/wiki/Global-and-instance-mode
+
+		const sketch1 = function(p){
+			p.x = 1;
+			p.y = 1;
+			p.setup = () => {
+			p.createCanvas(900, 900);
+		};
+
+		p.draw = () => {
+			p.background(255,12,p.x);
+			p.x+=p.y;
+			if(p.x>255||p.x<1){
+				p.y*=-1
+			}
+			p.ellipse(p.mouseX,p.mouseY, 10, 10)
+			};
+		}
+
+		const sketch2 = function(p){
+			p.x = 1;
+			p.y = 2;
+			p.setup = () => {
+			p.createCanvas(300, 300);
+		};
+
+		p.draw = () => {
+			p.background(0,12,p.x);
+			p.x+=p.y;
+			if(p.x>255||p.x<1){
+				p.y*=-1
+			}
+			};
+		}
+
+		let myp5Big = new p5(sketch1); 
+		let myp5Small = new p5(sketch2); 
+
+
+
+		
+		// const s1 = ( sketch1 ) => {
+	
+		// let x = 1;
+		// let y = 1;
+
+		// sketch1.setup = () => {
+		// 	sketch1.createCanvas(900, 900);
+		// };
+
+		// sketch1.draw = () => {
+		// 	sketch1.background(255,12,x);
+		// 	x+=y;
+		// 	if(x>255||x<1){
+		// 		y*=-1
+		// 	}
+		// 	};
+		// };
+
+// 		const s2 = ( sketch2 ) => {
+
+// let x = 1;
+// let y = 1;
+
+// sketch2.setup = () => {
+// 	// sketch2.createCanvas(300, 300);
+// };
+
+// sketch2.draw = () => {
+// 	sketch2.background(20);
+// 	x+=y;
+// 	if(x>255||x<1){
+// 		y*=-1
+// 	}
+// 	};
+// };
+
+
+
+// let myp5 = new p5(s1); 
+
+ 			// document.getElementById("clickable").addEventListener("click", showCanvas); /*this is waiting for the text to be clicked*/
+			
+			// /* when clicked, do this */
+			//  function showCanvas(){
+			// 	document.getElementById("defaultCanvas0").style.visibility="visible";
+			// }
+
+			// /* basic processing sketch*/
+			// function setup() {
+			// 	createCanvas(800,800);
+			// 	background(255,5,200,100); /*if you wanted your sketch to fade in, you could set this fourth number to a variable and have it increase incrementally when the "clickable" text is clicked , and it fades in*/
+			// }
+			// function draw() {
+			// 	ellipse(mouseX,mouseY,10,10)	
+			// }
+
+    </script>
+  </body>
+</html>
