@@ -13,7 +13,10 @@ function setup() {
   
   button = createButton("play");
   button.mousePressed(togglePlaying);
-  document.getElementById("clickable-1").addEventListener("click", showCanvas);
+  
+  for (let i=1; i<5; i++){
+    document.getElementById("clickable-"+i).addEventListener("click", showCanvas);
+  }
 }
 
 function showCanvas(){
@@ -53,11 +56,8 @@ function togglePlaying(){
 }
 
 function timer() {
-  let counter;
+  let counter = myAudio.currentTime();
   let barWidth = width/myAudio.duration();
   
-  counter = myAudio.currentTime();
-  
-  
-  rect(0,height-20,width/myAudio.duration()*counter,20)
+  rect(0,height-20,barWidth*counter,20)
 }
