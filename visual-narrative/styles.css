@@ -46,6 +46,13 @@ body {
       /* .thumbnails a {
         cursor: none;
       } */
+
+      #defaultCanvas0{
+        visibility: hidden;
+			  position: absolute; /* I added basic positioning to show the canvas could overlap the button */
+ 			 	top: 0;
+  			left: 0;
+      }
   
       @media only screen and (max-width: 1200px) {
   
