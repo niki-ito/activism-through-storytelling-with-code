@@ -7,7 +7,7 @@ p5.js sketches: <br>
 <a href ="https://niki-ito.github.io/Codeing/example-sketches/example-4.html" target = "_blank"> example 4 </a><br>
 
 ## Visual Narrative Website
-<a href = "https://niki-ito.github.io/Codeing/" target = "_blank">About Me, You, & Us</a>
+<a href = "https://niki-ito.github.io/Activism-Through-Storytelling-with-Code/" target = "_blank">About Me, You, & Us</a>
 
 ## Weekly Documentations
 Community bonding week: 
