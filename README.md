@@ -55,3 +55,12 @@ Week 5:
 - Develop the HTML and CSS for the Visual Narrative website with responsive design.
 - Create mockups to experiment with the design of the website in Adobe Photoshop.
 - Record and photograph the second conversation.
+
+Week 6:
+- Complete first GSoC evaluation.
+- Edit the audio recording from the second conversation.
+- Receive the developed photos and edit them. 
+- Develop the design for the Visual Narrative website.
+- Experiment with adding subtitles(transcribed conversation) to the audio visualization. 
+- Record and photograph the last conversation.
+- Learn how to merge and separate branches to have a better workflow. 
