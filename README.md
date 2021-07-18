@@ -1,10 +1,10 @@
 # Acitvism Through Storytelling with Code
 ## Examples
 p5.js sketches: <br>
-<a href ="https://niki-ito.github.io/Codeing/example-sketches/example-1.html" target = "_blank"> example 1 </a><br>
-<a href ="https://niki-ito.github.io/Codeing/example-sketches/example-2.html" target = "_blank"> example 2 </a><br>
-<a href ="https://niki-ito.github.io/Codeing/example-sketches/example-3.html" target = "_blank"> example 3 </a><br>
-<a href ="https://niki-ito.github.io/Codeing/example-sketches/example-4.html" target = "_blank"> example 4 </a><br>
+<a href ="https://niki-ito.github.io/Activism-Through-Storytelling-with-Code/example-sketches/example-1.html" target = "_blank"> example 1 </a><br>
+<a href ="https://niki-ito.github.io/Activism-Through-Storytelling-with-Code/example-sketches/example-2.html" target = "_blank"> example 2 </a><br>
+<a href ="https://niki-ito.github.io/Activism-Through-Storytelling-with-Code/example-sketches/example-3.html" target = "_blank"> example 3 </a><br>
+<a href ="https://niki-ito.github.io/Activism-Through-Storytelling-with-Code/example-sketches/example-4.html" target = "_blank"> example 4 </a><br>
 
 ## Visual Narrative Website
 <a href = "https://niki-ito.github.io/Activism-Through-Storytelling-with-Code/" target = "_blank">About Me, You, & Us</a>
