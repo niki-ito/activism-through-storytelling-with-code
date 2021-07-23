@@ -13,6 +13,7 @@ function setup() {
   
   button = createButton("play");
   button.mousePressed(togglePlaying);
+  button.position(0,0)
   
   for (let i=1; i<5; i++){
     document.getElementById("clickable-"+i).addEventListener("click", showCanvas);
