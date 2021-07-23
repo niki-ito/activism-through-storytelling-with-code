@@ -64,3 +64,10 @@ Week 6:
 - Experiment with adding subtitles(transcribed conversation) to the audio visualization. 
 - Record and photograph the last conversation.
 - Learn how to merge and separate branches to have a better workflow. 
+
+Week 7:
+- Code the audio visualization to show subtitles at specified audio marks. 
+- Organize the edited photos and add them to the website and audio visualizer.
+- Develop the design for the Visual Narrative website.
+- Develop the Visual Narrative website to integrate the finalized p5.js sketches. 
+- Develop the items to be added in the toolkit/handbook.
