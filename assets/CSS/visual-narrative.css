@@ -42,10 +42,6 @@ body {
           color:rgb(71, 70, 66);
           text-align: center;
       }
-  
-      /* .thumbnails a {
-        cursor: none;
-      } */
 
       #defaultCanvas0{
         visibility: hidden;
@@ -56,6 +52,11 @@ body {
         padding-top: 50px;
         padding-left: 300px;
        
+      }
+
+      #transcript-container {
+        visibility: hidden;
+			  position: absolute; 
       }
   
       @media only screen and (max-width: 1200px) {
