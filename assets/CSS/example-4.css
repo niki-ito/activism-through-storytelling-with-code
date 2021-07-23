@@ -1,7 +1,29 @@
 html, body {
-    margin: 0;
-    padding: 0;
-  }
-  canvas {
-    display: block;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: grid;
+  position: relative;
+  background: black;
+  width: 700px;
+  height: 700px;
+}
+
+canvas {
+  position: absolute;
+  display: block;
+  top: 30px;
+  left: 35px;
+}
+
+h2 {
+  font-family: 'Crimson Text', serif;
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-top: 450px;
+  font-size: 2rem;
+}
+
