@@ -32,7 +32,7 @@ function setup() {
 
 function showCanvas(){
   document.getElementById("defaultCanvas0").style.visibility="visible";
-  console.log("clicked")
+  console.log("clicked");
 }
 
 function draw() {
