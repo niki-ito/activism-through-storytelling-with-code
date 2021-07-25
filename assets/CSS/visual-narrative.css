@@ -5,94 +5,95 @@ body {
     color: rgb(71, 70, 66)
   }
   
-  #main_thumbnail {
-    display: flex;
-   flex-flow: row wrap;
-   justify-content: space-around;
-   width: 60%;
-   margin: 100px auto;
-  }
+#main_thumbnail {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 60%;
+  margin: 100px auto;
+}
   
-      #main_thumbnail img{
-          width: 300px;
-          height: 300px;
-          padding-bottom: 80px;
-      }
-  
-      .thumbnails img:hover{
-          opacity: 50%;
-      }
-  
-      .thumbnails img:hover + .imgTitle{
-          display: block;
-      }
-  
-      .thumbnails {
-          position: relative;
-      }
-  
-      .imgTitle {
-          position: absolute;
-          display: none;
-          top: 32%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-family: 'Amatic SC', cursive;
-          font-size: 2.3rem;
-          color:rgb(71, 70, 66);
-          text-align: center;
-      }
+#main_thumbnail img{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 80px;
+}
 
-      #defaultCanvas0{
-        visibility: hidden;
-			  position: absolute; /* I added basic positioning to show the canvas could overlap the button */
- 			 	top: 0;
-  			left: 0;
-        width: 100%;
-        padding-top: 50px;
-        padding-left: 300px;
-       
-      }
+.thumbnails img:hover{
+    opacity: 50%;
+}
 
-      #transcript-container {
-        visibility: hidden;
-			  position: absolute; 
-      }
+.thumbnails img:hover + .imgTitle{
+    display: block;
+}
 
-      #container {
-        display: grid;
-        position: relative;
-        background: black;
-        width: 700px;
-        height: 700px;
-      }
-      
-      canvas {
-        position: absolute;
-        display: block;
-        top: 30px;
-        left: 35px;
-      }
-      
-      h2 {
-        font-family: 'Crimson Text', serif;
-        position: relative;
-        color: white;
-        text-align: center;
-        margin-top: 450px;
-        font-size: 2rem;
-      }
+.thumbnails {
+    position: relative;
+}
+
+.imgTitle {
+    position: absolute;
+    display: none;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.3rem;
+    color:rgb(71, 70, 66);
+    text-align: center;
+}
+
+#defaultCanvas0{
+  visibility: hidden;
+  position: absolute; /* I added basic positioning to show the canvas could overlap the button */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 35px;
   
-      @media only screen and (max-width: 1200px) {
-  
-          #main_thumbnail {
-            width: 70%;
-          }
-  }
-  
-      @media only screen and (max-width: 600px) {
-  
-          #main_thumbnail {
-            width: 100%;
-          }
-  }
+}
+
+/* #transcript-container {
+  visibility: hidden;
+  position: absolute; 
+} */
+
+#container {
+  visibility: hidden;
+  display: grid;
+  position: absolute;
+  background: black;
+  width: 700px;
+  height: 700px;
+}
+
+canvas {
+  position: absolute;
+  display: block;
+  top: 30px;
+  left: 35px;
+}
+
+h2 {
+  font-family: 'Crimson Text', serif;
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-top: 450px;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #main_thumbnail {
+      width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #main_thumbnail {
+      width: 100%;
+    }
+}

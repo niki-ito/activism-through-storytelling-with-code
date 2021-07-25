@@ -48,6 +48,5 @@ function draw() {
 function timer() {
   let counter = myAudio.currentTime();
   let barWidth = width/myAudio.duration();
-  // console.log(myAudio.currentTime())
   rect(0,height-20,barWidth*counter,20)
 }
