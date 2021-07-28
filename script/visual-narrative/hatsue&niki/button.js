@@ -7,6 +7,7 @@ function drawButtons() {
   button.style("border: 0px");
   button.style("font-size:1.4rem");
   button.parent("button");
+  // button.mousePressed(togglePlaying2);
   
   //create and style the exit button
   buttonX = createButton("&#10006");

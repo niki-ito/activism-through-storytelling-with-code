@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  background(255, 255, 245);
+  background(205, 222, 227);
   changeSpanColor();
   span.style("color", spanColor)
   drawCursor();
