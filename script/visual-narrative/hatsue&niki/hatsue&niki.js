@@ -81,7 +81,6 @@ function showAndSwitchElementsForSketch4() {
 }
 
 function createNewElementsForSketch() {
-  // let elementsForSketch2 = new ElementsForSketch(img2,myAudio2,subtitleArray2,subtitleCueArray2);
   let elementsForSketch1 = new ElementsForSketch(subtitleArray1,subtitleCueArray1);
   let elementsForSketch2 = new ElementsForSketch(subtitleArray2,subtitleCueArray2);
   let elementsForSketch3 = new ElementsForSketch(subtitleArray3,subtitleCueArray3);
@@ -92,7 +91,7 @@ function createNewElementsForSketch() {
 function draw() {
   background(255);
 
-  displayImgTimer();
+  displayImgTimerSubtitle();
   //audio visualizer
   let spectrum = fft.analyze();
   noStroke();
@@ -106,52 +105,7 @@ function draw() {
 
 }
 
-// class ElementsForSketch {
-//   constructor(img,audio,subtitleArrayFunction,subtitleCueArrayFunction) {
-//     this.img = img;
-//     this.audio = audio;
-//     this.subtitleArrayFunction = subtitleArrayFunction;
-//     this.subtitleCueArrayFunction = subtitleCueArrayFunction;
-//   }
-
-//   drawImage() {
-//     image(this.img, 0, 0, width, height);
-//   }
-
-//   controlButton() {
-//     button.mousePressed(this.togglePlaying());
-//   }
-
-//   togglePlaying(){
-//     if (!this.audio.isPlaying()){
-//       this.audio.play();
-//       button.html("&#10074&#10074");
-//     } else {
-//       this.audio.pause();
-//       button.html("&#9654");
-//     }
-//   }
-
-//   timer() {
-//     let counter = this.audio.currentTime();
-//     let barWidth = width/this.audio.duration();
-//     rect(0,height-20,barWidth*counter,20)
-//   }
-
-//   timeSubtitles() {
-//     for (let i = 0; i < this.subtitleCueArrayFunction.length; i ++){
-//       if (this.audio.currentTime()>=this.subtitleCueArrayFunction[i]){
-//         index = i;
-//       } 
-//     }
-//   }
-
-//   showText() {
-//     subtitle.html(this.subtitleArrayFunction[index]);
-//   }
-// }
-
-function displayImgTimer(){
+function displayImgTimerSubtitle(){
   if (display === 1){
     image(img1, 0, 0, 800, 800);
 
@@ -251,15 +205,6 @@ class ElementsForSketch {
       button.html("&#9654");
     }
   }
-
-  // timeSubtitles() {
-  //   for (let i = 0; i < this.subtitleArrayFunction; i ++){
-  //     if (myAudio1.currentTime()>=this.subtitleCueArrayFunction[i]){
-  //       index = i;
-  //     } 
-  //   }
-  //   this.showText();
-  // }
  
   timeSubtitles(audioNumber) {
     for (let i = 0; i < this.subtitleArrayFunction.length; i ++){
