@@ -1,6 +1,10 @@
 let fft;
 let myAudio1,myAudio2,myAudio3,myAudio4;
-let img1,img2,img3,img4;
+let img1 = [];
+let img2 = [];
+let img3 = [];
+let img4 = [];
+
 let elementsForSketchArray = [];
 let display = 1;
 
@@ -9,10 +13,13 @@ function preload() {
   myAudio2 = loadSound("../assets/audio/visual-narrative/smells.mp3");
   myAudio3 = loadSound("../assets/audio/visual-narrative/confident.mp3");
   myAudio4 = loadSound("../assets/audio/visual-narrative/homesick.mp3");
-  img1 = loadImage("../assets/images/visual-narrative/hatsue&niki/hatsue-13.jpg");
-  img2 = loadImage("../assets/images/visual-narrative/hatsue&niki/hatsue-10.jpg");
-  img3 = loadImage("../assets/images/visual-narrative/hatsue&niki/detail-3.jpg");
-  img4 = loadImage("../assets/images/visual-narrative/hatsue&niki/hatsue-5.jpg");
+
+  for (let i=1; i<5; i++) {
+    img1.push(loadImage("../assets/images/visual-narrative/hatsue&niki/img1_"+i+".jpg"));
+    img2.push(loadImage("../assets/images/visual-narrative/hatsue&niki/img2_"+i+".jpg"));
+    img3.push(loadImage("../assets/images/visual-narrative/hatsue&niki/img3_"+i+".jpg"));
+    img4.push(loadImage("../assets/images/visual-narrative/hatsue&niki/img4_"+i+".jpg"));
+  }
 }
 
 function setup() {
@@ -107,7 +114,7 @@ function draw() {
 
 function displayImgTimerSubtitle(){
   if (display === 1){
-    image(img1, 0, 0, 800, 800);
+    incertInteractiveImages(img1);
 
     let counter = myAudio1.currentTime();
     let barWidth = width/myAudio1.duration();
@@ -116,7 +123,7 @@ function displayImgTimerSubtitle(){
     elementsForSketchArray[0].timeSubtitles(myAudio1);
 
   } else if (display === 2){
-    image(img2, 0, 0, 800, 800);
+    incertInteractiveImages(img2);
 
     let counter = myAudio2.currentTime();
     let barWidth = width/myAudio2.duration();
@@ -125,7 +132,7 @@ function displayImgTimerSubtitle(){
     elementsForSketchArray[1].timeSubtitles(myAudio2);
 
   } else if (display === 3){
-    image(img3, 0, 0, 800, 800);
+    incertInteractiveImages(img3);
 
     let counter = myAudio3.currentTime();
     let barWidth = width/myAudio3.duration();
@@ -134,7 +141,7 @@ function displayImgTimerSubtitle(){
     elementsForSketchArray[2].timeSubtitles(myAudio3);
 
   } else if (display === 4){
-    image(img4, 0, 0, 800, 800);
+    incertInteractiveImages(img4);
 
     let counter = myAudio4.currentTime();
     let barWidth = width/myAudio4.duration();
@@ -142,6 +149,27 @@ function displayImgTimerSubtitle(){
 
     elementsForSketchArray[3].timeSubtitles(myAudio4);
   }
+}
+
+function incertInteractiveImages(imageNumber){
+  let tint1,tint2,tint3,tint4;
+
+  tint1 = map(mouseX+mouseY, 100, width, 255, 0);
+  tint2 = map((mouseX)*-1+mouseY, width-100, 0, 255, 0);
+  tint3 = map(mouseX+(mouseY)*-1, width-100, 0, 255, 0);
+  tint4 = map(mouseY-(mouseX)*-1, width-100, 0, 255, 0);
+  
+  tint(255,tint4);
+  image(imageNumber[3], 0, 0, width, height);
+  
+  tint(255, tint1);  
+  image(imageNumber[0], 0, 0, width, height);
+  
+  tint(255, tint2);
+  image(imageNumber[1], 0, 0, width, height);
+  
+  tint(255,tint3);
+  image(imageNumber[2], 0, 0, width, height);
 }
 
 class ElementsForSketch {
