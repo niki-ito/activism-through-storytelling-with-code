@@ -75,20 +75,23 @@ height: 300px;
 padding-bottom: 80px;
 }
 
+
 .switch {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
+display: block;
+opacity: 0%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 99; 
 }
 
-.thumbnails img:hover{
-opacity: 10%;
+
+.thumbnails .switch:hover{
+opacity: 100%;
 }
 
 .thumbnails img:hover + .imgTitle{
-display: block;
+display: none;
 }
 
 .thumbnails {
@@ -97,7 +100,7 @@ position: relative;
 
 .imgTitle {
 position: absolute;
-display: none;
+display: block;
 top: 32%;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -192,6 +195,14 @@ nav li:not(:last-child){
 #main_thumbnail img{
     margin: 0px auto;
 }
+
+.switch {
+    display: none;
+    }
+
+.thumbnails .switch:hover{
+    opacity: 0%;
+    }
 
 .imgTitle {
     top: 32%;
