@@ -9,16 +9,16 @@ let elementsForSketchArray = [];
 let display = 1;
 
 function preload() {
-  myAudio1 = loadSound("../assets/audio/visual-narrative/different.mp3");
-  myAudio2 = loadSound("../assets/audio/visual-narrative/smells.mp3");
-  myAudio3 = loadSound("../assets/audio/visual-narrative/confident.mp3");
-  myAudio4 = loadSound("../assets/audio/visual-narrative/homesick.mp3");
+  myAudio1 = loadSound("../assets/audio/visual-narrative/names.mp3");
+  myAudio2 = loadSound("../assets/audio/visual-narrative/born.mp3");
+  myAudio3 = loadSound("../assets/audio/visual-narrative/agency.mp3");
+  myAudio4 = loadSound("../assets/audio/visual-narrative/male.mp3");
 
-  for (let i=1; i<5; i++) {
-    img1.push(loadImage("../assets/images/visual-narrative/hatsue&niki/img1_"+i+".jpg"));
-    img2.push(loadImage("../assets/images/visual-narrative/hatsue&niki/img2_"+i+".jpg"));
-    img3.push(loadImage("../assets/images/visual-narrative/hatsue&niki/img3_"+i+".jpg"));
-    img4.push(loadImage("../assets/images/visual-narrative/hatsue&niki/img4_"+i+".jpg"));
+  for (let i=1; i<4; i++) {
+    img1.push(loadImage("../assets/images/visual-narrative/joe&hatsue/img1_"+i+".jpg"));
+    img2.push(loadImage("../assets/images/visual-narrative/joe&hatsue/img2_"+i+".jpg"));
+    img3.push(loadImage("../assets/images/visual-narrative/joe&hatsue/img3_"+i+".jpg"));
+    img4.push(loadImage("../assets/images/visual-narrative/joe&hatsue/img4_"+i+".jpg"));
   }
 }
 
@@ -40,10 +40,6 @@ function setup() {
   //see subtitles.js
   incertText();
   incertCue();
-
-  // for (let i=1; i<5; i++){
-  //   document.getElementById("clickable-"+i).addEventListener("click", showAndSwitchElementsForSketch1);
-  // }
 
   createNewElementsForSketch();
 
@@ -154,24 +150,20 @@ function displayImgTimerSubtitle(){
 }
 
 function incertInteractiveImages(imageNumber){
-  let tint1,tint2,tint3,tint4;
+  let tint1,tint2,tint3;
 
-  tint1 = map(mouseX+mouseY, 100, width, 255, 0);
+  tint1 = map(mouseY, 100, width, 255, 0);
   tint2 = map((mouseX)*-1+mouseY, width-100, 0, 255, 0);
-  tint3 = map(mouseX+(mouseY)*-1, width-100, 0, 255, 0);
-  tint4 = map(mouseY-(mouseX)*-1, width-100, 0, 255, 0);
-  
-  tint(255,tint4);
-  image(imageNumber[3], 0, 0, width, height);
+  tint3 = map(mouseY, width, 0, 255, 0);
   
   tint(255, tint1);  
   image(imageNumber[0], 0, 0, width, height);
   
-  tint(255, tint2);
-  image(imageNumber[1], 0, 0, width, height);
-  
   tint(255,tint3);
   image(imageNumber[2], 0, 0, width, height);
+  
+  tint(255, tint2);
+  image(imageNumber[1], 0, 0, width, height);
 }
 
 class ElementsForSketch {

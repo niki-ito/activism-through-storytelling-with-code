@@ -1,31 +1,29 @@
 
 body {
   padding: 0;
+  font-family: 'Poiret One', cursive;
   margin: 0;
   cursor: none;
   color: rgb(71, 70, 66)
 }
 
 #mainText {
-    position: fixed;
+    /* position: fixed; */
     padding-left: 100px;
 }
 
 #mainText p {
     font-size: 1.1rem;
-    font-family: 'Quicksand', sans-serif;
     width: 600px;
     line-height: 1.5rem;
 }
 
 #mainText h1 {
-    font-family: 'Amatic SC', cursive;
     font-size: 7rem;
     margin-bottom: 0px;
 }
 
 #mainText .btn {
-    font-family: 'Quicksand', sans-serif;
     background-color:cornflowerblue; 
     opacity: 0.4;
     border-radius: 50px;
@@ -61,14 +59,12 @@ nav ul {
 
 #main_thumbnail {
     position: relative;
-    float: right;
+    /* float: right; */
     margin: 100px 0px;
     margin-right: 170px;
 }
 
 #main_thumbnail img{
-overflow-x: hidden;
-overflow-y: scroll;
 display: block;
 width: 300px;
 height: 300px;
@@ -104,7 +100,7 @@ display: block;
 top: 32%;
 left: 50%;
 transform: translate(-50%, -50%);
-font-family: 'Amatic SC', cursive;
+font-family: 'Poiret One', cursive;
 font-size: 2.3rem;
 color:rgb(71, 70, 66);
 }
@@ -133,8 +129,8 @@ cursor: none;
 }
 
 #main_thumbnail {
-    overflow-y: auto;
-    overflow-x: scroll;
+    /* overflow-y: auto;
+    overflow-x: scroll; */
     position: relative;
     float: none;
     display: flex;
