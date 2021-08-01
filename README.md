@@ -61,13 +61,20 @@ Week 6:
 - Edit the audio recording from the second conversation.
 - Receive the developed photos and edit them. 
 - Develop the design for the Visual Narrative website.
-- Experiment with adding subtitles(transcribed conversation) to the audio visualization. 
+- Experiment with adding subtitles(transcribed conversation) to the audio visualization sketches. 
 - Record and photograph the last conversation.
 - Learn how to merge and separate branches to have a better workflow. 
 
 Week 7:
-- Code the audio visualization to show subtitles at specified audio marks. 
+- Code the audio visualization sketches to show subtitles at specified audio marks. 
 - Organize the edited photos and add them to the website and audio visualizer.
 - Develop the design for the Visual Narrative website.
 - Develop the Visual Narrative website to integrate the finalized p5.js sketches. 
 - Develop the items to be added in the toolkit/handbook.
+
+Week 8:
+- Code the website to show p5 canvases on thumbnail click with Event Listeners. 
+- Code the audio visualization sketches to have interactive photographs. 
+- Illustrate/paint the thumbnails to appear on the website. 
+- Redesign the website using mockups. 
+- Create a text-based document for the items to be added to the toolkit/handbook.
