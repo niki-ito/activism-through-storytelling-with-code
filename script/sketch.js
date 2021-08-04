@@ -2,6 +2,13 @@ let canvas;
 let span;
 let spanColor;
 
+let fft;
+let myAudio1;
+
+function preload() {
+  myAudio1 = loadSound("../assets/audio/visual-narrative/different.mp3");
+}
+
 function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
 }
@@ -12,21 +19,24 @@ function setup() {
   canvas.style('z-index', '-1');
   canvas.style('position', 'fixed');
   span = select("span");
-
-  noCursor();
+  // myAudio1.play();
 }
 
 function draw() {
-  background(205, 222, 227);
+  background(245,251,243);
   changeSpanColor();
   span.style("color", spanColor)
-  drawCursor();
-}
+  fill(31, 28, 112,100);
 
-function drawCursor(){
-  fill(233, 255, 168);
+  let spectrum = fft.analyze();
   noStroke();
-  ellipse(mouseX, mouseY, 20,20);
+
+  for (let i = 0; i < spectrum.length; i++) {
+    let x = map(i, 0, spectrum.length, 0, width);
+    let h = map(spectrum[i], 0, 255, 0, height);
+    fill(spectrum[i] * 1.5 + 50, 173, 159, 80);
+    rect(x, 0, width / spectrum.length, height);
+  }
 }
 
 function changeSpanColor(){

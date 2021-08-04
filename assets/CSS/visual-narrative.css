@@ -4,6 +4,54 @@ body {
     margin: 0;
     color: rgb(71, 70, 66)
   }
+
+  nav {
+    font-size: 0.8rem;
+    margin-top: -80px;
+    padding: 0px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    font-family: 'Poiret One', cursive;
+}   
+
+nav a {
+    text-decoration: none;
+    color: #e3624c;
+}
+
+nav h5 {
+    display: inline;
+}
+
+#bottom {
+    bottom: 0;
+    color: #e3624c;
+}
+
+#left {
+    float: left;
+    padding-left: 20px;
+}
+
+#right {
+    float: right;
+    padding-right: 20px;
+}
+
+#leftBtn{
+    padding-left: 20px;
+    float: left;
+}
+
+#middleBtn{
+  padding-left: 60px;
+}
+
+#rightBtn {
+    padding-right: 20px;
+    float: right;
+}
   
 #main_thumbnail {
   display: flex;
