@@ -3,10 +3,9 @@ body {
   padding: 0;
   font-family: 'Poiret One', cursive;
   margin: 0;
-  /* cursor: none; */
-  color: rgb(71, 70, 66);
   height:100%;
   overflow:auto;
+  background-color: rgb(245,251,243);
 }
 
 #mainText h1{
@@ -49,6 +48,11 @@ nav a {
     color: #e3624c;
 }
 
+nav a:hover {
+    border-bottom: 1px dashed #3285da;
+    padding-bottom: 5px;
+}
+
 nav h5 {
     display: inline;
 }
@@ -60,26 +64,26 @@ nav h5 {
 
 #left {
     float: left;
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 #right {
     float: right;
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 #leftBtn{
-    padding-left: 20px;
+    margin-left: 20px;
     float: left;
 }
 
 #middleBtn{
-    padding-left: 60px;
+    margin-left: 60px;
   }
   
 
 #rightBtn {
-    padding-right: 20px;
+    margin-right: 20px;
     float: right;
 }
 
@@ -88,10 +92,8 @@ nav h5 {
     justify-content: space-around;
     flex-direction: row;
     position: relative;
-    padding-top: 300px;
-    padding-bottom: 80px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 300px auto 80px auto;
 }
 
 #main_thumbnail img{
@@ -138,6 +140,18 @@ nav h5 {
 #end {
     text-align: center;
     margin-bottom: 100px;
+    color: #e3624c;
+    line-height: 2.5rem;
+}
+
+#end a {
+    text-decoration: none;
+    color: #e3624c;
+}
+
+#end a:hover {
+    border-bottom: 1px dashed #3285da;
+    padding-bottom: 5px;
 }
 
 @media only screen and (max-width: 1200px) {

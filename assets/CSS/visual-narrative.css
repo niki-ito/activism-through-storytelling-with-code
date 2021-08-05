@@ -21,6 +21,11 @@ nav a {
     color: #e3624c;
 }
 
+nav a:hover {
+  border-bottom: 1px dashed #3285da;
+  padding-bottom: 5px;
+}
+
 nav h5 {
     display: inline;
 }
@@ -32,25 +37,25 @@ nav h5 {
 
 #left {
     float: left;
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 #right {
     float: right;
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 #leftBtn{
-    padding-left: 20px;
+    margin-left: 20px;
     float: left;
 }
 
 #middleBtn{
-  padding-left: 60px;
+  margin-left: 60px;
 }
 
 #rightBtn {
-    padding-right: 20px;
+    margin-right: 20px;
     float: right;
 }
 
@@ -64,6 +69,11 @@ nav h5 {
 #backBtn a {
   text-decoration: none;
   color: #e3624c;
+}
+
+#backBtn a:hover {
+  border-bottom: 1px dashed #3285da;
+  padding-bottom: 5px;
 }
   
 #main_thumbnail {
@@ -134,18 +144,14 @@ nav h5 {
   
 }
 
-/* #transcript-container {
-  visibility: hidden;
-  position: absolute; 
-} */
-
 #container {
   visibility: hidden;
   display: grid;
   position: absolute;
-  background: black;
+  background: white;
   width: 700px;
   height: 700px;
+  box-shadow: 0 8px 6px 8px rgb(196, 219, 210);
 }
 
 canvas {
