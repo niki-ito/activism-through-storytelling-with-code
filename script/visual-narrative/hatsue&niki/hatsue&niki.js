@@ -61,16 +61,28 @@ function showCanvas(){
 }
 
 function hideCanvas() {
-  stopAnyAudio();
+  pauseAnyAudio();
   document.getElementById("defaultCanvas0").style.visibility="hidden";
   document.getElementById("container").style.visibility="hidden"; 
 }
 
-function stopAnyAudio() {
-  myAudio1.stop();
-  myAudio2.stop();
-  myAudio3.stop();
-  myAudio4.stop();
+function pauseAnyAudio() {
+if (myAudio1.isPlaying()){
+    myAudio1.pause();
+    button.html("&#9654");
+}   
+if (myAudio2.isPlaying()){
+  myAudio2.pause();
+  button.html("&#9654");
+} 
+if (myAudio3.isPlaying()){
+  myAudio3.pause();
+  button.html("&#9654");
+} 
+if (myAudio4.isPlaying()){
+  myAudio4.pause();
+  button.html("&#9654");
+}    
 }
 
 function showAndSwitchElementsForSketch1() {

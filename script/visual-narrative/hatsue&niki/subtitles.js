@@ -12,26 +12,6 @@ let subtitleCueArray4 = [];
 
 let index = 0;
 
-//Show appropriate subtitle using the recorded time stamps 
-// function timeSubtitles() {
-//   for (let i = 0; i < subtitleCueArray1.length; i ++){
-//     if (myAudio1.currentTime()>=subtitleCueArray1[i]){
-//       index = i;
-//     } 
-//   }
-// }
-
-//Tool used to create time staps for the subtitles
-
-// function mouseClicked() {
-//   index = index + 1
-//   console.log(myAudio.currentTime());
-// }
-
-// function showText() {
-//   subtitle.html(subtitleArray1[index]);
-// }
-
 function incertText() {
   subtitleArray1.push("I remember actually making this", "certain thought recently <br>but at a certain point", "I start forgetting that I’m Asian", " or forgetting what I look like.", "Recently? Or… ", "No, I was realizing this recently<br> about my entire life", "forgetting what I look like and", "I disassociate a lot and I feel", "not embodied within my own self.", " I’ll see photos of me <br>and I’m like “That’s me”", " but a lot of the time I’m like", " “That’s not me.", " That’s just a character I’m playing in life”<br> kind of thing", " and my face and my mind<br> isn’t connected to that body.", " Because inside I feel so white ", "because I’d grown up around<br> so many white people ", "and that has made me forget that", " a lot of people assume<br> that I’m full Asian ", "just because I don’t know,", " I guess I look more ", "Japanese than white to a lot of people", " so a lot of people always<br> assume that I’m full.", " Whenever I look in the mirror ", "I have to really look at myself", " and I’m like “That’s me", " that’s me", "that’s me. I have that face.”", " And so that’s something I’m working on.", " Trying to remember or trying to identify ", "more with being Japanese", " and I feel that’s <br>something that’s been going on for… ", "five years? Probably", " ever since senior year of highschool", " because that’s when I changed my name.", " Okay. ", "So that was the first step of realizing.", " Because even though I am half white", " I don’t look half white", " and people always assume <br>that I’m Japanese", " and I feel like being half Japanese is ", "very much a part of my identity", " and so I need to lean into that more ", "because I feel I’ve neglected it", " for the other part of my life. ", "So a lot of that is why I want to ", "move to Japan and learn Japanese ", "and fully assimilate.", " But yeah.", "Being in Japan where everyone else", " looks like me", " and has dark eyes ", "and has dark hair", " and the thin eyes and <br>we all look very similar ", "and it’s very comforting for me. ", "Being from Hamilton<br> where there’s no Japanese people", " other than my mom,", "it always feels weird.", " And that’s why I like <br>being in Chinatown (NY)", "because there’s so many Asian people", " even though they are<br> all not technically Japanese", " I’m like “I like being here.”<br> You know.", " Yeah, like a sense of identity", " in terms of being Japanese lacks", " in terms of lacking the community, ", "I guess.", " But we have a strong community", "at our Buddhist temple", " where it’s majority Japanese people ", "because it’s a Japanese Buddhism", " and so that’s where I gained most of", " feeling like I’m Japanese ", "because of these people who are here.")
   subtitleArray2.push("So I’m very attached to smells", "and so there’s a lot of specific smells", "that I associate <br>with many different things.", "Like the bathroom in the beginning", "it kind of smelled like<br> my grandma’s bathroom", "and I’ll get really nostalgic about that.", "The smell of right<br> when you open <i>yakuruto</i>", "a specific memory in <br>my grandma’s apartment", "late at night, <br>they used to have", "a refrigerator next<br> to the toilet room", "and we would just walk down", "and I remember this specific feeling <br>of the wooden floors", "and her getting a <i>yakuruto</i> out <br>of the refrigerator for me", "and that smell, the wood floors", "also the cold refrigerator<br> and the opening of it.", "Ugh...", "And then we have blankets<br> at my<i> house</i> house", "that we have vacuum packed<br> just to keep for storage", "and they kind of still smell like<br> my grandma’s house of incense", "so I’m always smelling them.","Wow.<br> So your grandma that lives in Japan?","Yeah, in Japan.","Huh, is the incense from a…","I forget what you call it.","<i>Butsudan? Butsudan</i>. Ohh.","Yeah.","My grandma’s place has a butsudan too", "because my grandfather passed away<br> when I was born", "so we’ve always had a <i>butsudan</i><br> at my grandma’s place", "and we wouldn’t really have incense", "but there was a little bell <br>that we would always ring", "when we want to say something", "and then we would always give food.","Yeah.","So my grandma<br> passed away last summer.","In Japan? Yes.","So now they’re both in the shrine.","But my mom’s older sister", "they live in Saitama", "and so my grandma’s apartment<br> is in Yokosuka", "so they’re actually there now.","So they still kind of<br> go to that apartment.","They still have the apartment. ");
