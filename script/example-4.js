@@ -3,7 +3,7 @@ let img;
 
 function preload() {
   myAudio = loadSound("../assets/audio/visual-narrative/smells.mp3");
-  img = loadImage("../assets/images/visual-narrative/hatsue&niki/hatsue-10.jpg");
+  img = loadImage("../assets/images/visual-narrative/hatsue&niki/img2_1.jpg");
 }
 
 function setup() {
