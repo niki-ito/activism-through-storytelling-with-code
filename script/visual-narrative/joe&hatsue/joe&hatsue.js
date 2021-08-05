@@ -57,8 +57,16 @@ function showCanvas(){
 }
 
 function hideCanvas() {
+  stopAnyAudio();
   document.getElementById("defaultCanvas0").style.visibility="hidden";
   document.getElementById("container").style.visibility="hidden"; 
+}
+
+function stopAnyAudio() {
+  myAudio1.stop();
+  myAudio2.stop();
+  myAudio3.stop();
+  myAudio4.stop();
 }
 
 function showAndSwitchElementsForSketch1() {

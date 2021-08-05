@@ -2,12 +2,13 @@
 body {
     padding: 0;
     margin: 0;
-    color: rgb(71, 70, 66)
+    color: rgb(71, 70, 66);
+    background-color: rgb(245,251,243);
   }
 
   nav {
     font-size: 0.8rem;
-    margin-top: -80px;
+    margin-top: -85px;
     padding: 0px;
     position: fixed;
     text-align: center;
@@ -52,6 +53,18 @@ nav h5 {
     padding-right: 20px;
     float: right;
 }
+
+#backBtn {
+  padding-top: 70px;
+  padding-left: 170px;
+  position: absolute;
+  font-family: 'Poiret One', cursive;
+}
+
+#backBtn a {
+  text-decoration: none;
+  color: #e3624c;
+}
   
 #main_thumbnail {
   display: flex;
@@ -59,12 +72,13 @@ nav h5 {
   justify-content: space-around;
   width: 60%;
   margin: 100px auto;
+  max-width: 800px;
 }
   
 #main_thumbnail img{
     width: 300px;
     height: 300px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .thumbnails img:hover{
@@ -85,7 +99,7 @@ nav h5 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 99; 
+  /* z-index: 99;  */
   }
   
   

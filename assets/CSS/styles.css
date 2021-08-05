@@ -22,6 +22,7 @@ body {
     line-height: 1.5rem;
     padding-top: 300px;
     color: #e3624c;
+    text-align: center;
 }
 
 #mainText h1 {
@@ -36,7 +37,7 @@ body {
 
 nav {
     font-size: 0.8rem;
-    margin-top: -60px;
+    margin-top: -50px;
     padding: 0px;
     position: fixed;
     text-align: center;
@@ -72,6 +73,11 @@ nav h5 {
     float: left;
 }
 
+#middleBtn{
+    padding-left: 60px;
+  }
+  
+
 #rightBtn {
     padding-right: 20px;
     float: right;
@@ -88,10 +94,10 @@ nav h5 {
 
 #main_thumbnail img{
     display: block;
-    padding-right: 50px;
+    margin-right: 50px;
     width: 300px;
     height: 300px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 
@@ -128,9 +134,9 @@ nav h5 {
     color:rgb(71, 70, 66);
 }
 
-.thumbnails a {
+/* .thumbnails a {
     cursor: none;
-}
+} */
 
 @media only screen and (max-width: 1200px) {
 #mainText h1 {
