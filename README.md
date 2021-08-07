@@ -75,6 +75,13 @@ Week 7:
 Week 8:
 - Code the website to show p5 canvases on thumbnail click with Event Listeners. 
 - Code the audio visualization sketches to have interactive photographs. 
-- Illustrate/paint the thumbnails to appear on the website. 
+- Illustrate/paint the thumbnails on the website. 
 - Redesign the website using mockups. 
 - Create a text-based document for the items to be added to the toolkit/handbook.
+
+Week 9:
+- Revise the text-based document for the toolkit/handbook.
+- Develop the "learn more about this project" page on the website.
+- Develop the speakers' introduction page on the website.
+- Create an Issues post on GitHub for browser issues. 
+- Develop additional elements for the website.
