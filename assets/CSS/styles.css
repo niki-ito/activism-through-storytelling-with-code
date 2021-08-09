@@ -14,34 +14,46 @@ body {
 }
 
 #mainText article {
+    padding-top: 300px;
+}
+
+article {
     font-family: "Josefin Sans", sans-serif;
     margin: 0 auto;
     font-size: 1.1rem;
     width: 600px;
     line-height: 1.5rem;
-    padding-top: 300px;
     color: #e3624c;
     text-align: center;
 }
 
+.section-header {
+    padding-top: 200px;
+}
+
+.section {
+    padding-top:50px;
+}
+
+.section-end {
+    padding-top:50px;
+    padding-bottom: 200px;
+}
+
 #mainText h1 {
+    margin-top: 0px;
     font-size: 7rem;
     margin-bottom: 0px;
 }
 
-/* nav ul li a {
-    pointer-events: all !important;
-    cursor: none;
-} */
-
 nav {
     font-size: 0.8rem;
-    margin-top: -50px;
+    margin-top: 15px;
     padding: 0px;
     position: fixed;
     text-align: center;
     width: 100%;
-}   
+}  
 
 nav a {
     text-decoration: none;
@@ -137,19 +149,19 @@ nav h5 {
     color: #3285da;
 }
 
-#end {
+#end,.links {
     text-align: center;
     margin-bottom: 100px;
     color: #e3624c;
     line-height: 2.5rem;
 }
 
-#end a {
+.links {
     text-decoration: none;
     color: #e3624c;
 }
 
-#end a:hover {
+#end a:hover, .links:hover {
     border-bottom: 1px dashed #3285da;
     padding-bottom: 5px;
 }
