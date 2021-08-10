@@ -166,6 +166,10 @@ nav h5 {
     padding-bottom: 5px;
 }
 
+.about {
+    width: 100%;
+}
+
 @media only screen and (max-width: 1200px) {
 #mainText h1 {
     font-size: 6rem;
