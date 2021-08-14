@@ -9,12 +9,15 @@ body {
 }
 
 #mainText h1{
+    margin-top: 0px;
     padding-top: 400px;
     color: #3285da;
+    margin-bottom: 200px;
+    font-size: 7rem;
 }
 
 #mainText article {
-    padding-top: 300px;
+    padding-top: 100px;
 }
 
 article {
@@ -38,12 +41,6 @@ article {
 .section-end {
     padding-top:50px;
     padding-bottom: 200px;
-}
-
-#mainText h1 {
-    margin-top: 0px;
-    font-size: 7rem;
-    margin-bottom: 0px;
 }
 
 nav {
@@ -105,7 +102,8 @@ nav h5 {
     flex-direction: row;
     position: relative;
     max-width: 800px;
-    margin: 300px auto 0px auto;
+    margin: 0 auto;
+    padding-top: 200px;
 }
 
 #main_thumbnail img{
@@ -157,7 +155,7 @@ nav h5 {
 }
 
 #end {
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 .links {
@@ -172,6 +170,11 @@ nav h5 {
 
 .about {
     width: 100%;
+}
+
+ol li{
+    text-align: left;
+    padding-bottom: 20px;
 }
 
 /* meet.html */
