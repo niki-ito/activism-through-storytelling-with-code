@@ -60,7 +60,7 @@ nav h5 {
 }
 
 #backBtn {
-  padding-top: 70px;
+  padding-top: 20px;
   padding-left: 170px;
   position: absolute;
   font-family: 'Poiret One', cursive;
@@ -182,4 +182,10 @@ h2 {
     #main_thumbnail {
       width: 100%;
     }
+
+    #backBtn {
+      padding-top: 10px;
+      padding-left: 20px;
+      position: fixed;
+  }
 }
