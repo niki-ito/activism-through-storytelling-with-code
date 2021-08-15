@@ -24,7 +24,7 @@ function draw() {
 function changeSpanColor(){
   let r = mouseX/2;
   let g = 200;
-  let b = mouseY/5;
+  let b = mouseY/2;
   spanColor = "rgb(" + r + "," + g + "," + b + ")";
 }
 
