@@ -2,13 +2,6 @@ let canvas;
 let span;
 let spanColor;
 
-let fft;
-let myAudio1;
-
-function preload() {
-  myAudio1 = loadSound("../assets/audio/visual-narrative/different.mp3");
-}
-
 function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
 }
@@ -25,11 +18,17 @@ function draw() {
   background(245,251,243);
   changeSpanColor();
   span.style("color", spanColor);
+  cursorObject();
 }
 
 function changeSpanColor(){
-  let r = mouseX/5;
-  let g = 100;
+  let r = mouseX/2;
+  let g = 200;
   let b = mouseY/5;
   spanColor = "rgb(" + r + "," + g + "," + b + ")";
+}
+
+function cursorObject(){
+  fill(2,4,102);
+  circle(mouseX, mouseY, 400);
 }
