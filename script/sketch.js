@@ -18,30 +18,18 @@ function setup() {
   canvas.position(0,0);
   canvas.style('z-index', '-1');
   canvas.style('position', 'fixed');
-  span = select("span");
-  // myAudio1.play();
+  span = select('#you');
 }
 
 function draw() {
   background(245,251,243);
   changeSpanColor();
-  span.style("color", spanColor)
-  fill(31, 28, 112,100);
-
-  let spectrum = fft.analyze();
-  noStroke();
-
-  for (let i = 0; i < spectrum.length; i++) {
-    let x = map(i, 0, spectrum.length, 0, width);
-    let h = map(spectrum[i], 0, 255, 0, height);
-    fill(spectrum[i] * 1.5 + 50, 173, 159, 80);
-    rect(x, 0, width / spectrum.length, height);
-  }
+  span.style("color", spanColor);
 }
 
 function changeSpanColor(){
   let r = mouseX/5;
   let g = 100;
-  let b = mouseY/3;
+  let b = mouseY/5;
   spanColor = "rgb(" + r + "," + g + "," + b + ")";
 }

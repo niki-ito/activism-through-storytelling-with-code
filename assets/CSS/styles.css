@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: LemonCake;
+    src: url(../fonts/LemonCake.otf);
+}
+
 body {
   padding: 0;
   font-family: 'Poiret One', cursive;
@@ -10,14 +15,43 @@ body {
 
 #mainText h1{
     margin-top: 0px;
-    padding-top: 400px;
+    padding-top: 280px;
+    text-align: center;
+    margin-right: 20px;
+    width: 100%;
     color: #3285da;
     margin-bottom: 200px;
-    font-size: 7rem;
+    font-size: 11rem;
+    font-family: 'Amatic SC', cursive;
+    /* opacity: 90%; */
+}
+
+/* styling the title  */
+#about {
+    font-size: 0.35em;
+    letter-spacing: 5px;
+    position: absolute;
+    line-height: 0.5rem;
+}
+
+.cap, #y{
+    font-size: 1.5em;
+}
+
+#y {
+    letter-spacing: -7px;
+}
+
+#and {
+    font-size: 0.35em;
 }
 
 #mainText article {
     padding-top: 100px;
+}
+
+#mainText h2 {
+    line-height: 2rem;;
 }
 
 article {
@@ -96,6 +130,15 @@ nav h5 {
     float: right;
 }
 
+#main_thumbnail p {
+    position: absolute;
+    color: #e3624c;
+    margin-top: -50px;
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+
 #main_thumbnail {
     display: flex;
     justify-content: space-around;
@@ -139,10 +182,11 @@ nav h5 {
 .imgTitle {
     position: absolute;
     display: block;
-    top: 32%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Poiret One', cursive;
+    font-family: 'Amatic SC', cursive;
+    line-height: 2.3rem;
     font-size: 2.3rem;
     color: #3285da;
 }
@@ -208,6 +252,7 @@ ol li{
     font-size: 1.1rem;
     line-height: 1.5rem;
     color: #e3624c;
+    margin-bottom: 0px;
 }
 
 #meet-container .meet-row:nth-child(2n){
@@ -218,8 +263,10 @@ ol li{
 
 .meet-names {
     color: #3285da;
-    font-size: 3rem;
-    margin-top: -15px;    
+    font-size: 7rem;
+    margin-top: -25px;  
+    margin-bottom: -10px;
+    font-family: 'Amatic SC', cursive;  
 }
 
 #backBtn {
@@ -244,14 +291,22 @@ padding-bottom: 5px;
     color: #e3624c;
 }
 
+.icons {
+    width: 35px;
+}
+
 @media only screen and (max-width: 1200px) {
 #mainText h1 {
-    font-size: 6rem;
-    margin-bottom: 30px;
+    font-size: 9rem;
+}
+
+#mainText h2 {
+    font-size: 1.7rem;
 }
 
 #mainText p {
     font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 #main_thumbnail {
@@ -261,20 +316,25 @@ padding-bottom: 5px;
     flex-direction: row;
 }
 
+ol li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
 .imgTitle {
-    top: 30%;
-    left: 40%;
+    top: 40%;
+    left: 50%;
 }
 }
 
 @media only screen and (max-width: 600px) {
 
 #mainText h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     margin-bottom: 30px;
 }
 
-#mainText article {
+article {
     margin: 0 auto;
     font-size: 0.7rem;
     line-height: 1rem;
@@ -283,6 +343,10 @@ padding-bottom: 5px;
 
 #mainText .btn {
     font-size: 0.7rem;
+}
+
+nav {
+    font-size: 0.6rem;
 }
 
 nav ul {
@@ -303,8 +367,13 @@ nav li:not(:last-child){
     padding-left: 0px;
 }
 
+#main_thumbnail p {
+    position: relative;
+    font-size: 1.1rem;
+}
+
 .thumbnails {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 #main_thumbnail img{
@@ -321,7 +390,7 @@ nav li:not(:last-child){
     }
 
 .imgTitle {
-    top: 32%;
+    top: 40%;
     left: 50%;
 }
 

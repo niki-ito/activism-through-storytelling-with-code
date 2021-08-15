@@ -41,10 +41,6 @@ function setup() {
   incertText();
   incertCue();
 
-  // for (let i=1; i<5; i++){
-  //   document.getElementById("clickable-"+i).addEventListener("click", showAndSwitchElementsForSketch1);
-  // }
-
   createNewElementsForSketch();
 
   document.getElementById("clickable-1").addEventListener("click", showAndSwitchElementsForSketch1);

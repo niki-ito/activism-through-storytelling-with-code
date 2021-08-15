@@ -75,6 +75,16 @@ nav h5 {
   border-bottom: 1px dashed #3285da;
   padding-bottom: 5px;
 }
+
+#main_thumbnail p {
+  font-family: "Josefin Sans", sans-serif;
+  position: absolute;
+  color: #e3624c;
+  margin-top: 330px;
+  font-size: 1.3rem;
+  text-align: center;
+
+}
   
 #main_thumbnail {
   display: flex;
