@@ -29,6 +29,14 @@ function changeSpanColor(){
 }
 
 function cursorObject(){
-  fill(2,4,102);
-  circle(mouseX, mouseY, 400);
+  
+  for (let i=0; i<85; i++){
+    let d = 300+(i*2);
+    let alpha = 255-(i*3);
+
+    fill(2,4,102,alpha);
+    noStroke();
+    circle(mouseX, mouseY, d);
+  }
+
 }

@@ -19,8 +19,14 @@ p.draw = () => {
 };
 
 p.cursorObject = () => {
-    p.fill(2,4,102);
-    p.circle(p.mouseX, p.mouseY, 400); 
+    for (let i=0; i<85; i++){
+        let d = 300+(i*2);
+        let alpha = 255-(i*3);
+    
+        p.fill(2,4,102,alpha);
+        p.noStroke();
+        p.circle(p.mouseX, p.mouseY, d);
+      }
 };
 
 }
