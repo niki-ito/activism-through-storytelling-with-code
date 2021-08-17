@@ -21,6 +21,7 @@ function draw() {
   cursorObject();
 }
 
+//change color based on mouseX and mouseY position
 function changeSpanColor(){
   let r = mouseX/2;
   let g = 200;
@@ -28,6 +29,7 @@ function changeSpanColor(){
   spanColor = "rgb(" + r + "," + g + "," + b + ")";
 }
 
+//create a circle at the cursor location with blurred edges
 function cursorObject(){
   
   for (let i=0; i<85; i++){

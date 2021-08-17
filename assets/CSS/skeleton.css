@@ -108,14 +108,8 @@
   padding-top:0px;
 }
 
-.chapter-sidebar {
-  display: none;
-  position: absolute;
-  right: 28px;
-  top: 468px;
-}
-
 .chapter-sidebar--sticky {
+  display: block;
   position: fixed;
   right: 28px;
   top: 27px;
@@ -167,9 +161,6 @@ a:link {
 
 
 @media only screen and (min-width: 1200px) and (min-height: 450px) {
-  .chapter-sidebar {
-    display: block;
-  }
 }
 
 /* For devices larger than 400px */
@@ -534,10 +525,18 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+  .chapter-sidebar {
+    display: none;
+  }
+}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+  .chapter-sidebar {
+    display: block;
+  }
+}
 
 /* Larger than tablet */
 @media (min-width: 750px) {}
