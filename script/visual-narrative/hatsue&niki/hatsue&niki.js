@@ -48,7 +48,7 @@ function setup() {
   document.getElementById("clickable-3").addEventListener("click", showAndSwitchElementsForSketch3);
   document.getElementById("clickable-4").addEventListener("click", showAndSwitchElementsForSketch4);
 
-  document.getElementById("button-exit").addEventListener("click",hideCanvas)
+  document.getElementById("button-exit").addEventListener("click",hideCanvas);
 }
 
 function showCanvas(){

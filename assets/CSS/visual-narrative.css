@@ -143,16 +143,16 @@ nav h5 {
     text-align: center;
 }
 
-#defaultCanvas0{
+/* #defaultCanvas0{
   visibility: hidden;
-  position: absolute; /* I added basic positioning to show the canvas could overlap the button */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
   padding-top: 30px;
   padding-left: 35px;
   
-}
+} */
 
 #container {
   visibility: hidden;
