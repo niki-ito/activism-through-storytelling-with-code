@@ -162,7 +162,7 @@ nav h5 {
   background: white;
   width: 700px;
   height: 700px;
-  box-shadow: 0 8px 6px 8px rgb(196, 219, 210);
+  box-shadow: 0 8px 6px 8px rgba(30, 65, 77, 0.3);
 }
 
 canvas {
