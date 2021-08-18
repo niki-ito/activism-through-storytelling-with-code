@@ -1,3 +1,5 @@
+//background p5 canvas
+
 const sketch1 = function(p){
   p.canvas;
 
@@ -30,9 +32,23 @@ p.cursorObject = () => {
 
 }
 
-let myp5Background = new p5(sketch1); 
+
+// audio visualization p5 canvas
 
 const sketch2 = function(p){
+
+  // window.onload = () => {
+  //   p.fft;
+  //   p.myAudio1,p.myAudio2,p.myAudio3,p.myAudio4;
+  //   p.img1 = [];
+  //   p.img2 = [];
+  //   p.img3 = [];
+  //   p.img4 = [];
+    
+  //   p.elementsForSketchArray = [];
+  //   p.display = 1;
+  // }
+
   p.fft;
   p.myAudio1,p.myAudio2,p.myAudio3,p.myAudio4;
   p.img1 = [];
@@ -71,7 +87,6 @@ p.setup = () => {
   p.fft = new p5.FFT(0.9,64);
 
   p.drawButtons();
-
   p.incertText();
   p.incertCue();
 
@@ -85,34 +100,14 @@ p.setup = () => {
   document.getElementById("button-exit").addEventListener("click", p.hideCanvas);
 };
 
- p.drawButtons = () => {
-  //create and style the play button
-  p.button = p.createButton("&#9654");
-  p.button.position(345,665);
-  p.button.style("background-color:white");
-  p.button.style("color: peachpuff");
-  p.button.style("border: 0px");
-  p.button.style("font-size:1.4rem");
-  p.button.parent("button");
-  
-  //create and style the exit button
-  p.buttonX = p.createButton("&#10006");
-  p.buttonX.position(665,5);
-  p.buttonX.style("background-color:white");
-  p.buttonX.style("color: peachpuff");
-  p.buttonX.style("border: 0px");
-  p.buttonX.style("font-size:1.4rem");
-  p.buttonX.parent("button-exit");   
-};
-
 p.showCanvas = () => {
-  document.getElementById("defaultCanvas0").style.visibility="visible";
+  document.getElementById("defaultCanvas1").style.visibility="visible";
   document.getElementById("container").style.visibility="visible";
 }
 
 p.hideCanvas = () => {
   p.pauseAnyAudio();
-  document.getElementById("defaultCanvas0").style.visibility="hidden";
+  document.getElementById("defaultCanvas1").style.visibility="hidden";
   document.getElementById("container").style.visibility="hidden"; 
 }
 
@@ -223,8 +218,6 @@ p.displayImgTimerSubtitle = () =>{
 
 p.incertInteractiveImages = (imageNumber) => {
   p.tint1,p.tint2,p.tint3,p.tint4;
-  p.width = 800;
-  p.height = 800;
 
   p.tint1 = p.map(p.mouseX+p.mouseY, 100, p.width, 255, 0);
   p.tint2 = p.map((p.mouseX)*-1+p.mouseY, p.width-100, 0, 255, 0);
@@ -321,6 +314,26 @@ class ElementsForSketch {
 
 }
 
+p.drawButtons = () => {
+  //create and style the play button
+  p.button = p.createButton("&#9654");
+  p.button.position(345,665);
+  p.button.style("background-color:white");
+  p.button.style("color: peachpuff");
+  p.button.style("border: 0px");
+  p.button.style("font-size:1.4rem");
+  p.button.parent("button");
+  
+  //create and style the exit button
+  p.buttonX = p.createButton("&#10006");
+  p.buttonX.position(665,5);
+  p.buttonX.style("background-color:white");
+  p.buttonX.style("color: peachpuff");
+  p.buttonX.style("border: 0px");
+  p.buttonX.style("font-size:1.4rem");
+  p.buttonX.parent("button-exit");   
+};
+
 p.subtitleArray1 = [];
 p.subtitleCueArray1 = [];
 
@@ -353,5 +366,6 @@ p.incertCue = () => {
 
 }
 
+let myp5Background = new p5(sketch1); 
 
 let myp5canvas = new p5(sketch2); 

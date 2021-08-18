@@ -143,16 +143,17 @@ nav h5 {
     text-align: center;
 }
 
-/* #defaultCanvas0{
-  visibility: hidden;
+#defaultCanvas0{
+  visibility: visible;
+  /* visibility: hidden;
   position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
   padding-top: 30px;
   padding-left: 35px;
-  
-} */
+   */
+}
 
 #container {
   visibility: hidden;
