@@ -37,18 +37,6 @@ p.cursorObject = () => {
 
 const sketch2 = function(p){
 
-  // window.onload = () => {
-  //   p.fft;
-  //   p.myAudio1,p.myAudio2,p.myAudio3,p.myAudio4;
-  //   p.img1 = [];
-  //   p.img2 = [];
-  //   p.img3 = [];
-  //   p.img4 = [];
-    
-  //   p.elementsForSketchArray = [];
-  //   p.display = 1;
-  // }
-
   p.fft;
   p.myAudio1,p.myAudio2,p.myAudio3,p.myAudio4;
   p.img1 = [];

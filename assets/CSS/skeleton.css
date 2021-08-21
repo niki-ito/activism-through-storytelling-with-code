@@ -92,7 +92,7 @@
   align-items: center;
   box-sizing: border-box;
   font-size: smaller;
-  background-color:#f5fbf3;
+  background-color:#f3f8fb;
 }
 
 .main-nav a {
@@ -187,6 +187,14 @@ a:link {
 
 .key-dropdown:hover:after{
 content:'\25bc'
+}
+
+.key-dropdown__bold {
+  font-weight: bold;
+}
+
+#struggles ol{
+  list-style: decimal outside;
 }
 
 @media only screen and (min-width: 1200px) and (min-height: 450px) {
