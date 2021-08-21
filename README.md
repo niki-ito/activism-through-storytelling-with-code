@@ -9,6 +9,9 @@ Example 4:<a href ="https://niki-ito.github.io/activism-through-storytelling-wit
 ## Visual Narrative Website
 <a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/" target = "_blank">About Me, You, & Us</a>
 
+## Handbook
+<a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/handbook/index.html" target = "_blank">Activism Through Storytelling with Code: a step-by-step guide</a>
+
 ## Weekly Documentations
 Community bonding week: 
 - Introductions with mentors.
@@ -85,3 +88,8 @@ Week 9:
 - Develop the speakers' introduction page on the website.
 - Create an Issues post on GitHub for browser issues. 
 - Develop additional elements for the website.
+
+Week 10:
+- Create the toolkit/handbook website.
+- Finalize the visual narrative website.
+- Use instance mode and namespacing to add an additional background canvas to the website.
