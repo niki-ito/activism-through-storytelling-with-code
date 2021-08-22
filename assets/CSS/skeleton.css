@@ -67,6 +67,7 @@
 .section-img{
   width: 100%;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .section-img__caption {
@@ -76,6 +77,12 @@
 
 .section-img__caption span{
   display: inline-block;
+}
+
+.img-half {
+  display: inline-block;
+  width: 49%;
+  margin-bottom: 30px;
 }
 
 .main-nav {
@@ -191,10 +198,6 @@ content:'\25bc'
 
 .key-dropdown__bold {
   font-weight: bold;
-}
-
-#struggles ol{
-  list-style: decimal outside;
 }
 
 @media only screen and (min-width: 1200px) and (min-height: 450px) {
@@ -450,8 +453,8 @@ label > .label-body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
   list-style: circle inside; }
-ol {
-  list-style: decimal inside; }
+/* ol {
+  list-style: decimal inside; } */
 ol, ul {
   padding-left: 0;
   margin-top: 0; }
