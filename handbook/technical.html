@@ -55,8 +55,9 @@
                         <h1 class="section-heading">Technical Strategies</h1>
                         <h6 class="section-heading"><i>a step-by-step guide</i></h6>
                         <p class="section-description">The technical strategies guide for the visual narrative website
-                            includes utilizing personal & collaborative strength which includes audio, photography and
-                            illustration, coding, and resources. This section focuses on the technical aspect of
+                            includes utilizing personal & collaborative strength which includes audio, photography, and
+                            illustration, coding on the p5.js editor and the website, project resources, and a conclusion. This
+                            section focuses on the technical aspect of
                             creating the visual narrative website. It gives you a brief demonstration of the techniques
                             and tools
                             I used. </p>
@@ -92,7 +93,7 @@
                     <ol class="section-description">
                         <li>Obtain an audio recorder. (I used a Zoom H1n recorder.)</li>
                         <li>Test the audio recording. (It is best to use headphones.)</li>
-                        <li>Find ways to record clean audio. (I recorded one indoors in a quiet room, and another one
+                        <li>Find ways to record clean audio. (I recorded one indoors in a quiet room and another one
                             outdoors with a wind muffler. I found it more difficult to edit out inconsistent noise such
                             as people talking and cars parking.)</li>
                         <li>Set a time to meet and record the conversation.</li>
@@ -137,7 +138,7 @@
                         <li>Use a light tablet or bright window to trace the lines onto watercolor paper.
                             -Add lost detail with a pencil.</li>
                         <img class="section-img" src="../assets/images/handbook/trace.jpg">
-                        <li>Choose one color and paint the thumbnails. (the color can be later changed using photoshop.)
+                        <li>Choose one color and paint the thumbnails. (the color can be later changed using Adobe Photoshop.)
                         </li>
                         <li>Photograph the painting with a good digital camera.</li>
                         <img class="section-img" src="../assets/images/handbook/paint.JPG">
@@ -160,7 +161,8 @@
                             the p5.js sketches onto a local website. The p5.js editor was used to create an audio
                             visualizer, timed subtitles, and interactive images. I used GitHub to document changes and
                             host the website. EventListener and namespacing were used to refine further interactions
-                            between the JavaScript files and HTML files.
+                            between the JavaScript files and HTML files. I also used GitHub's Issue to post coding
+                            issues and contribute to open-source,
                         </p>
                     </div>
                 </div>
@@ -258,7 +260,7 @@ function mouseClicked() {
     }
                                         </code>
                                     </pre>
-                                <li>Store the documented time from the concole in an array.</li>
+                                <li>Store the documented time from the console in an array.</li>
                                 <pre>
                                         <code>
 let subtitleCueArray = [];
@@ -288,7 +290,7 @@ function timeSubtitles() {
     }
                                         </code>
                                     </pre>
-                                <li>See final p5.js subtitle function <a
+                                <li>See the final p5.js subtitle function <a
                                         href="https://editor.p5js.org/Nikiiii/sketches/6OZjxPjB5"
                                         target="_blank">here</a>.</li>
                             </ol>
@@ -335,7 +337,7 @@ image(img3, 0, 0, width, height);
                                 <li>Set up a local development environment for the project.
                                     <ol>
                                         <li>Use <a href="https://code.visualstudio.com/" target="_blank">Visual Studio
-                                                Code</a> to organiza the development environment. (Creating p5.js
+                                                Code</a> to organize the development environment. (Creating p5.js
                                             sketches on a local environment instead of the p5.js editor allows larger
                                             files sizes and better organizations for bigger projects.)</li>
                                         <img class="section-img" src="../assets/images/handbook/vsc.jpg">
@@ -355,7 +357,7 @@ image(img3, 0, 0, width, height);
                                         <img class="section-img" src="../assets/images/handbook/desktop.jpg">
                                         <li>Create the basic structure of the website. (I created a main index.html, a
                                             script
-                                            folder for JavaScripts files, and an assets folder for audio, images, fonts,
+                                            folder for JavaScript files, and an assets folder for audio, images, fonts,
                                             and CSS
                                             files.)</li>
                                         <li>Move the finalized p5 sketches onto the personal development
@@ -368,7 +370,7 @@ image(img3, 0, 0, width, height);
                                 <li>Create mockups for the design of the website.</li>
                                 <img class="section-img" src="../assets/images/handbook/mockup-1.jpg">
                                 <img class="section-img" src="../assets/images/handbook/mockup.jpg">
-                                <li>Create Google Docs for the text draft of the website. (using Google Docs allowed
+                                <li>Create Google Docs for the text-based draft of the website. (using Google Docs allowed
                                     collaborative editing.)</li>
                                 <li>Code the website.</li>
                                 <li>Use <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventListener"
@@ -377,8 +379,8 @@ image(img3, 0, 0, width, height);
                                 <img class="section-img" src="../assets/images/handbook/events.gif"
                                     alt="this is an animated gif image but does not move">
                                 <ol>
-                                    <li>Add an id <code>clickable-1</code> to the html thumbnail element.</li>
-                                    <li>Use <code>.getElementById</code> to select the id from the html document.</li>
+                                    <li>Add an id <code>clickable-1</code> to the HTML thumbnail element.</li>
+                                    <li>Use <code>.getElementById</code> to select the id from the HTML document.</li>
                                     <li>Use <code>.addEventListener</code> to listen for when the id is clicked.</li>
                                     <li>Call the function <code>showCanvas()</code> to make the p5.js canvas visible
                                         when the canvas id is clicked. To do so, select the default canvas id name
