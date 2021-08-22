@@ -155,23 +155,36 @@
                 <div class="row">
                     <div class="twelve column">
                         <h2 class="section-heading">Coding</h2>
-                        <ul class="section-description">
-                            <li>p5.js: Javascript</li>
-                            <ol>
-                                <li>See examples of p5 sketches with audio visualizations.</li>
-                                <li>Experiment and develop the code for the audio visualizers in the p5 editor.
-                                    <ol>
-                                        <li>Study FFT analysis to convert audio into data points.</li>
-                                        <img class="section-img" src="../assets/images/handbook/notes-2.jpg">
-                                        <li>Experiment with the FFT waveform and spectrum analysis.</li>
-                                        <img class="img-half" src="../assets/images/handbook/test-2.gif"
-                                            alt="this is an animated gif image but does not move">
-                                        <img class="img-half" src="../assets/images/handbook/test-1.gif"
-                                            alt="this is an animated gif image but does not move">
-                                        <li>Develop the code for the finalized audio visualizer. (I unified the height of the spectrum to create a simple gradient effect)</li>
-                                        <img class="section-img" src="../assets/images/handbook/final.gif"
-                                            alt="this is an animated gif image but does not move">
-                                        <pre>
+                        <p class="section-description">The coding portion of the visual narrative website included
+                            creating the audio visualization using p5.js and organizing the JavaScript sketches and
+                            other important information on a website using HTML and CSS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="p5">
+            <div class="container">
+                <div class="row">
+                    <div class="twelve column">
+                        <h2 class="section-heading">p5.js Editor</h2>
+                        <ol class="section-description">
+                            <li>See examples of p5 sketches with audio visualizations.</li>
+                            <li>Experiment and develop the code for the audio visualizers in the <a
+                                    href="https://editor.p5js.org/" target="_blank">p5 editor</a>.
+                                <ol>
+                                    <li>Study FFT analysis to convert audio into data points.</li>
+                                    <img class="section-img" src="../assets/images/handbook/notes-2.jpg">
+                                    <li>Experiment with the FFT waveform and spectrum analysis.</li>
+                                    <img class="img-half" src="../assets/images/handbook/test-2.gif"
+                                        alt="this is an animated gif image but does not move">
+                                    <img class="img-half" src="../assets/images/handbook/test-1.gif"
+                                        alt="this is an animated gif image but does not move">
+                                    <li>Develop the code for the finalized audio visualizer. (I unified the height
+                                        of the spectrum to create a simple gradient effect)</li>
+                                    <img class="section-img" src="../assets/images/handbook/final.gif"
+                                        alt="this is an animated gif image but does not move">
+                                    <pre>
                                             <code>
         let myAudio, fft, img;
         
@@ -201,13 +214,13 @@
         }                                                                            
                                             </code>
                                         </pre>
-                                    </ol>
-                                </li>
-                                <li>Plan and develop the code to show subtitles along in the p5 editor.</li>
-                                <ol>
-                                    <li>Take the transcribed text and use an array to store each chunk of text. Show the
-                                        text using a variable <code>index</code>.</li>
-                                    <pre>
+                                </ol>
+                            </li>
+                            <li>Plan and develop the code to show subtitles along in the p5 editor.</li>
+                            <ol>
+                                <li>Take the transcribed text and use an array to store each chunk of text. Show the
+                                    text using a variable <code>index</code>.</li>
+                                <pre>
                                         <code>
 let subtitleArray = []; 
 let index = 0;  
@@ -224,14 +237,14 @@ function incertText() {
 }                                         
                                         </code>
                                     </pre>
-                                    <li>Use <code>currentTime()</code> <code>mouselicked()</code> and
-                                        <code>console.log()</code>to document the
-                                        timing of the subtitles while playing the audio. Use the variable
-                                        <code>index</code> to view and switch the text.
-                                    </li>
-                                    <img class="section-img" src="../assets/images/handbook/timing.gif"
-                                        alt="this is an animated gif image but does not move">
-                                    <pre>
+                                <li>Use <code>currentTime()</code> <code>mouselicked()</code> and
+                                    <code>console.log()</code>to document the
+                                    timing of the subtitles while playing the audio. Use the variable
+                                    <code>index</code> to view and switch the text.
+                                </li>
+                                <img class="section-img" src="../assets/images/handbook/timing.gif"
+                                    alt="this is an animated gif image but does not move">
+                                <pre>
                                         <code>
 function mouseClicked() {
     index = index + 1
@@ -239,8 +252,8 @@ function mouseClicked() {
     }
                                         </code>
                                     </pre>
-                                    <li>Store the documented time from the concole in an array.</li>
-                                    <pre>
+                                <li>Store the documented time from the concole in an array.</li>
+                                <pre>
                                         <code>
 let subtitleCueArray = [];
 
@@ -255,10 +268,10 @@ function incertCue() {
 }
                                         </code>
                                     </pre>
-                                    <li>Create a function that adds 1 to the <code>index</code> each time the audio's
-                                        <code>currentTime()</code> exceeds the corresponding documented time.
-                                    </li>
-                                    <pre>
+                                <li>Create a function that adds 1 to the <code>index</code> each time the audio's
+                                    <code>currentTime()</code> exceeds the corresponding documented time.
+                                </li>
+                                <pre>
                                         <code>
 function timeSubtitles() {
     for (let i = 0; i < subtitleCueArray.length; i ++){
@@ -269,17 +282,17 @@ function timeSubtitles() {
     }
                                         </code>
                                     </pre>
-                                    <li>See final p5.js subtitle function <a
-                                            href="https://editor.p5js.org/Nikiiii/sketches/6OZjxPjB5"
-                                            target="_blank">here</a>.</li>
-                                </ol>
-                                <li>Plan and develop the code to interactively show groups of photos in the p5 editor.
-                                    <ol>
-                                        <li>Use <code>tint()</code> <code>map()</code> and <code>mouseX, mouseY</code>
-                                            to change the opacity of the image based on the cursor position.</li>
-                                        <img class="section-img" src="../assets/images/handbook/image.gif"
-                                            alt="this is an animated gif image but does not move">
-                                        <pre>
+                                <li>See final p5.js subtitle function <a
+                                        href="https://editor.p5js.org/Nikiiii/sketches/6OZjxPjB5"
+                                        target="_blank">here</a>.</li>
+                            </ol>
+                            <li>Plan and develop the code to interactively show groups of photos in the p5 editor.
+                                <ol>
+                                    <li>Use <code>tint()</code> <code>map()</code> and <code>mouseX, mouseY</code>
+                                        to change the opacity of the image based on the cursor position.</li>
+                                    <img class="section-img" src="../assets/images/handbook/image.gif"
+                                        alt="this is an animated gif image but does not move">
+                                    <pre>
                                             <code>
 tint2 = map((mouseX)*-1+mouseY, width-100, 0, 255, 0);
 tint1 = map(mouseX+mouseY, 100, width, 255, 0);
@@ -299,91 +312,234 @@ tint(255,tint3);
 image(img3, 0, 0, width, height);
                                             </code>
                                         </pre>
-                                        <li>The calculation for mapping <code>mouseX, mouseY</code> to a tint value
-                                            between 0 and 255 was a bit tricky for me to understand. I ended up just
-                                            guessing and seeing what works.</li>
-                                    </ol>
-                                </li>
-                                <li>Move the finalized p5 sketches onto the personal development environment.</li>
-                            </ol>
-                            <li>Website: HTML&CSS</li>
-                            <ol>
-                                <li>Set up a local development environment for the project. (I created a local development environment instead of using the p5.js editor in order to track editing histories with GitHub and have a larger and organized file environment with Visual Studio Code.)</li>
-                                <img class="section-img" src="../assets/images/handbook/vsc.jpg">
-                                <li>Create an account and a project repository on GitHub. (I decided to include all of my project files in one repository.)</li>
-                                <li>Use GitHub Pages to host the website. (this is a great way to host a website for free and contribute to open-source processing.)</li>
-                                <img class="section-img" src="../assets/images/handbook/pages.jpg">
-                                <li>Use <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> to interact with GitHub from your local development environment.</li>
-                                <img class="section-img" src="../assets/images/handbook/desktop.jpg">
-                            </ol>
-                        </ul>
+                                    <li>The calculation for mapping <code>mouseX, mouseY</code> to a tint value
+                                        between 0 and 255 was a bit tricky for me to understand. I ended up just
+                                        guessing and seeing what works.</li>
+
+                                </ol>
                     </div>
                 </div>
             </div>
-            <div class="section" id="resources">
+            <div class="section" id="website">
                 <div class="container">
                     <div class="row">
                         <div class="twelve column">
-                            <h2 class="section-heading">Resources</h2>
-                            <p class="section-description">This handbook introduces a step-by-step example of Activism
-                                Through
-                                Storytelling with Code. The modeled project is a code-based visual narrative website
-                                titled
-                                “about Me, You, & Us.” This example will act as a utility for artists, designers,
-                                activists,
-                                and
-                                coders on learning how to narrate and visualize stories to advocate for important topics
-                                using
-                                p5.js.</p>
+                            <h2 class="section-heading">Website</h2>
+                            <ol class="section-description">
+                                <li>Set up a local development environment for the project.
+                                    <ol>
+                                        <li>Use <a href="https://code.visualstudio.com/" target="_blank">Visual Studio
+                                                Code</a> to organiza the development environment. (Creating p5.js
+                                            sketches on a local environment instead of the p5.js editor allows larger
+                                            files sizes and better organizations for bigger projects.)</li>
+                                        <img class="section-img" src="../assets/images/handbook/vsc.jpg">
+                                        <li>Create an account and a project repository on <a href="https://github.com/"
+                                                target="_blank">GitHub</a>.</li>
+                                        <li>Use GitHub Pages to host the website. (this is a great way to host a website
+                                            for
+                                            free and contribute to open-source processing.)</li>
+                                        <img class="section-img" src="../assets/images/handbook/pages.jpg">
+                                        <li>Add a README.md to explain and organize the repository for viewers.</li>
+                                        <li>Use <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>
+                                            to
+                                            interact with GitHub from your local development environment. (you can see
+                                            the
+                                            changes you've made and push the commits to update the website on GitHub.)
+                                        </li>
+                                        <img class="section-img" src="../assets/images/handbook/desktop.jpg">
+                                        <li>Create the basic structure of the website. (I created a main index.html, a
+                                            script
+                                            folder for JavaScripts files, and an assets folder for audio, images, fonts,
+                                            and CSS
+                                            files.)</li>
+                                        <li>Move the finalized p5 sketches onto the personal development
+                                            environment. (before moving the large finalized visual narrative p5.js
+                                            sketch, I moved smaller p5.js sketches to get used to the process.)</li>
+                                    </ol>
+                                </li>
+                                <li>Create wireframes for the website.</li>
+                                <img class="section-img" src="../assets/images/handbook/notes-3.jpg">
+                                <li>Create mockups for the design of the website.</li>
+                                <img class="section-img" src="../assets/images/handbook/mockup-1.jpg">
+                                <img class="section-img" src="../assets/images/handbook/mockup.jpg">
+                                <li>Create Google Docs for the text draft of the website. (using Google Docs allowed
+                                    collaborative editing.)</li>
+                                <li>Code the website.</li>
+                                <li>Use <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventListener"
+                                        target="_blank">EventListener</a> to have the p5.js canvas show when a thumbnail
+                                    is clicked.</li>
+                                <img class="section-img" src="../assets/images/handbook/events.gif"
+                                    alt="this is an animated gif image but does not move">
+                                <ol>
+                                    <li>Add an id <code>clickable-1</code> to the html thumbnail element.</li>
+                                    <li>Use <code>.getElementById</code> to select the id from the html document.</li>
+                                    <li>Use <code>.addEventListener</code> to listen for when the id is clicked.</li>
+                                    <li>Call the function <code>showCanvas()</code> to make the p5.js canvas visible
+                                        when the canvas id is clicked. To do so, select the default canvas id name
+                                        <code>defaultCanvas0</code> and style the CSS to be
+                                        <code>visibility: visible;</code></li>
+                                </ol>
+                                <pre>
+                                    <code>
+function setup() {
+    ...
+    document.getElementById("clickable-1")
+        .addEventListener("click", showAndSwitchElementsForSketch1);
+
+    document.getElementById("button-exit")
+        .addEventListener("click",hideCanvas);
+}
+
+function showCanvas(){
+    document.getElementById("defaultCanvas0").style.visibility="visible";
+    document.getElementById("container").style.visibility="visible";
+}
+
+function hideCanvas() {
+    pauseAnyAudio();
+    document.getElementById("defaultCanvas0").style.visibility="hidden";
+    document.getElementById("container").style.visibility="hidden"; 
+}
+
+function showAndSwitchElementsForSketch1() {
+    showCanvas();
+    display = 1;
+    elementsForSketchArray[0].controlButton1();
+}
+...
+                                    </code>
+                                </pre>
+                                <li>Use <a href="https://github.com/processing/p5.js/wiki/Global-and-instance-mode"
+                                        target="_blank">instance mode</a> aka <a
+                                        href="https://www.youtube.com/watch?v=Su792jEauZg"
+                                        target="_blank">namespacing</a> to allow two p5.js canvases on one html page.
+                                    (on the audio visualization page hatsue&niki.html, there is a p5.js canvas that
+                                    appears in the foregorund but I wanted to add a p5.js canvas in the background as
+                                    well.)
+                                    <ul>
+                                        <li><a href="https://github.com/niki-ito/activism-through-storytelling-with-code/tree/main/script/visual-narrative/hatsue%26niki"
+                                                target="_blank">Here</a> are the files before namespacing. Below is a
+                                            snippet of the code.</li>
+                                        <pre>
+                                            <code>
+function draw() {
+    background(255);
+    
+    displayImgTimerSubtitle();
+    //audio visualizer
+    let spectrum = fft.analyze();
+    noStroke();
+    
+    for (let i = 0; i < spectrum.length; i++) {
+        let x = map(i, 0, spectrum.length, 0, width);
+        let h = map(spectrum[i], 0, 255, 0, height);
+        fill(spectrum[i] * 1.5 + 50, 173, 159, 80);
+        rect(x, 0, width / spectrum.length, height);
+    }
+    
+    }
+                                            </code>
+                                        </pre>
+                                        <li><a href="https://github.com/niki-ito/activism-through-storytelling-with-code/blob/main/script/visual-narrative/namespacing/hatsue%26niki.js"
+                                                target="_blank">Here</a> is the file after namespacing. Below is a
+                                            snippet of the code. (I had to combine the separated script files in order
+                                            to use namespacing.)</li>
+                                        <pre>
+                                            <code>
+p.draw = () => {
+    p.background(255);
+    
+    p.displayImgTimerSubtitle();
+    //audio visualizer
+    p.spectrum = p.fft.analyze();
+    p.noStroke();
+    
+    for (let i = 0; i < p.spectrum.length; i++) {
+        p.x = p.map(i, 0, p.spectrum.length, 0, p.width);
+        p.fill(p.spectrum[i] * 1.5 + 50, 173, 159, 80);
+        p.rect(p.x, 0, p.width / p.spectrum.length, p.height);
+    }
+    }
+                                            </code>
+                                        </pre>
+                                    </ul>
+                                </li>
+                            </ol>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="section" id="conclusion">
-                <div class="container">
-                    <div class="row">
-                        <div class="twelve column">
-                            <h2 class="section-heading">Conclusion & Next Steps</h2>
-                            <p class="section-description">This handbook introduces a step-by-step example of Activism
-                                Through
-                                Storytelling with Code. The modeled project is a code-based visual narrative website
-                                titled
-                                “about Me, You, & Us.” This example will act as a utility for artists, designers,
-                                activists,
-                                and
-                                coders on learning how to narrate and visualize stories to advocate for important topics
-                                using
-                                p5.js.</p>
-                            <div class="section-link">
-                                <a class="button button-primary" href="conceptual.html">Read Chapter: Concepts</a>
+                <div class="section" id="resources">
+                    <div class="container">
+                        <div class="row">
+                            <div class="twelve column">
+                                <h2 class="section-heading">Resources</h2>
+                                <p class="section-description">This handbook introduces a step-by-step example of
+                                    Activism
+                                    Through
+                                    Storytelling with Code. The modeled project is a code-based visual narrative website
+                                    titled
+                                    “about Me, You, & Us.” This example will act as a utility for artists, designers,
+                                    activists,
+                                    and
+                                    coders on learning how to narrate and visualize stories to advocate for important
+                                    topics
+                                    using
+                                    p5.js.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="chapter-sidebar chapter-sidebar--sticky">
-                <div class="sidebar js-sidebar">
-                    <div class="sidebar__wrapper">
-                        <ul class="sidebar__list">
-                            <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
-                                    href="#strength">Utilizing Personal <br>& Collaborative Strength</a></li>
-                            <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
-                                    href="#audio">Audio</a></li>
-                            <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
-                                    href="#photography">Photography</a></li>
-                            <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
-                                    href="#illustration">Illustration</a></li>
-                            <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
-                                    href="#coding">Coding</a></li>
-                            <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
-                                    href="#resources">Resources</a></li>
-                            <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
-                                    href="#conclusion">Conclusion & Next Steps</a></li>
-                        </ul>
+                <div class="section" id="conclusion">
+                    <div class="container">
+                        <div class="row">
+                            <div class="twelve column">
+                                <h2 class="section-heading">Conclusion & Next Steps</h2>
+                                <p class="section-description">This handbook introduces a step-by-step example of
+                                    Activism
+                                    Through
+                                    Storytelling with Code. The modeled project is a code-based visual narrative website
+                                    titled
+                                    “about Me, You, & Us.” This example will act as a utility for artists, designers,
+                                    activists,
+                                    and
+                                    coders on learning how to narrate and visualize stories to advocate for important
+                                    topics
+                                    using
+                                    p5.js.</p>
+                                <div class="section-link">
+                                    <a class="button button-primary" href="conceptual.html">Read Chapter: Concepts</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End Document
+                <div class="chapter-sidebar chapter-sidebar--sticky">
+                    <div class="sidebar js-sidebar">
+                        <div class="sidebar__wrapper">
+                            <ul class="sidebar__list">
+                                <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
+                                        href="#strength">Utilizing Personal <br>& Collaborative Strength</a></li>
+                                <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
+                                        href="#audio">Audio</a></li>
+                                <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
+                                        href="#photography">Photography</a></li>
+                                <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
+                                        href="#illustration">Illustration</a></li>
+                                <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
+                                        href="#coding">Coding</a></li>
+                                <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
+                                        href="#p5">p5.js Editor</a></li>
+                                <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
+                                        href="#website">Website</a></li>
+                                <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
+                                        href="#resources">Resources</a></li>
+                                <li class="sidebar_list-item"><a class="sidebar__link sidebar__link--highlight"
+                                        href="#conclusion">Conclusion & Next Steps</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 
