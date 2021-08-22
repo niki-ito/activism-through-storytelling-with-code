@@ -155,9 +155,12 @@
                 <div class="row">
                     <div class="twelve column">
                         <h2 class="section-heading">Coding</h2>
-                        <p class="section-description">The coding portion of the visual narrative website included
-                            creating the audio visualization using p5.js and organizing the JavaScript sketches and
-                            other important information on a website using HTML and CSS.
+                        <p class="section-description">The coding portion of the visual narrative website included using
+                            the p5.js editor and later moving them to a local development environment where I integrated
+                            the p5.js sketches onto a local website. The p5.js editor was used to create an audio
+                            visualizer, timed subtitles, and interactive images. I used GitHub to document changes and
+                            host the website. EventListener and namespacing were used to refine further interactions
+                            between the JavaScript files and HTML files.
                         </p>
                     </div>
                 </div>
@@ -173,7 +176,10 @@
                             <li>Experiment and develop the code for the audio visualizers in the <a
                                     href="https://editor.p5js.org/" target="_blank">p5 editor</a>.
                                 <ol>
-                                    <li>Study FFT analysis to convert audio into data points.</li>
+                                    <li>Study FFT analysis to convert audio into data points. (I watched <a
+                                            href="https://www.youtube.com/watch?v=Iep6ZWtf4o8" target="_blank">this
+                                            class</a> by Danne Woo to get the basic code and example for FFT analysis.)
+                                    </li>
                                     <img class="section-img" src="../assets/images/handbook/notes-2.jpg">
                                     <li>Experiment with the FFT waveform and spectrum analysis.</li>
                                     <img class="img-half" src="../assets/images/handbook/test-2.gif"
@@ -216,7 +222,7 @@
                                         </pre>
                                 </ol>
                             </li>
-                            <li>Plan and develop the code to show subtitles along in the p5 editor.</li>
+                            <li>Plan and develop the code to time the subtitles with the audio in the p5 editor.</li>
                             <ol>
                                 <li>Take the transcribed text and use an array to store each chunk of text. Show the
                                     text using a variable <code>index</code>.</li>
@@ -377,7 +383,8 @@ image(img3, 0, 0, width, height);
                                     <li>Call the function <code>showCanvas()</code> to make the p5.js canvas visible
                                         when the canvas id is clicked. To do so, select the default canvas id name
                                         <code>defaultCanvas0</code> and style the CSS to be
-                                        <code>visibility: visible;</code></li>
+                                        <code>visibility: visible;</code>
+                                    </li>
                                 </ol>
                                 <pre>
                                     <code>
@@ -410,13 +417,15 @@ function showAndSwitchElementsForSketch1() {
                                     </code>
                                 </pre>
                                 <li>Use <a href="https://github.com/processing/p5.js/wiki/Global-and-instance-mode"
-                                        target="_blank">instance mode</a> aka <a
-                                        href="https://www.youtube.com/watch?v=Su792jEauZg"
-                                        target="_blank">namespacing</a> to allow two p5.js canvases on one html page.
+                                        target="_blank">instance mode</a> aka namespacing to allow two p5.js canvases on
+                                    one html page.
                                     (on the audio visualization page hatsue&niki.html, there is a p5.js canvas that
                                     appears in the foregorund but I wanted to add a p5.js canvas in the background as
                                     well.)
                                     <ul>
+                                        <li><a href="https://www.youtube.com/watch?v=Su792jEauZg"
+                                                target="_blank">Here</a> is a tutorial by The Coding Train that I
+                                            referenced.</li>
                                         <li><a href="https://github.com/niki-ito/activism-through-storytelling-with-code/tree/main/script/visual-narrative/hatsue%26niki"
                                                 target="_blank">Here</a> are the files before namespacing. Below is a
                                             snippet of the code.</li>
@@ -464,6 +473,11 @@ p.draw = () => {
                                         </pre>
                                     </ul>
                                 </li>
+                                <li>Post an <a
+                                        href="https://github.com/niki-ito/activism-through-storytelling-with-code/issues/2"
+                                        target="_blank">Issue</a> to document coding issues and contribute to
+                                    open-source processing.</li>
+                                <img class="section-img" src="../assets/images/handbook/issue.jpg">
                             </ol>
                         </div>
                     </div>
@@ -473,18 +487,16 @@ p.draw = () => {
                         <div class="row">
                             <div class="twelve column">
                                 <h2 class="section-heading">Resources</h2>
-                                <p class="section-description">This handbook introduces a step-by-step example of
-                                    Activism
-                                    Through
-                                    Storytelling with Code. The modeled project is a code-based visual narrative website
-                                    titled
-                                    “about Me, You, & Us.” This example will act as a utility for artists, designers,
-                                    activists,
-                                    and
-                                    coders on learning how to narrate and visualize stories to advocate for important
-                                    topics
-                                    using
-                                    p5.js.</p>
+                                <ul class="section-description">
+                                    <li><a href="https://p5js.org/" target="_blank">p5.js website</a>. (p5.js libraries,
+                                        references, examples, and tutorials)</li>
+                                    <li><a href="https://www.youtube.com/TheCodingTrain" target="_blank">The Coding
+                                            Train</a> by Daniel Shiffman. (YouTube tutorials)</li>
+                                    <li><a href="https://openprocessing.org/browse/#"
+                                            target="_blank">OpenProcessing</a>. (example p5.js sketches)</li>
+                                    <li><a href="https://www.youtube.com/channel/UCufOCDs5G1A4AffwmeV0XBw"
+                                            target="_blank">p5.js coding videos</a> by Xin Xin. (YouTube tutorials)</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -494,18 +506,16 @@ p.draw = () => {
                         <div class="row">
                             <div class="twelve column">
                                 <h2 class="section-heading">Conclusion & Next Steps</h2>
-                                <p class="section-description">This handbook introduces a step-by-step example of
-                                    Activism
-                                    Through
-                                    Storytelling with Code. The modeled project is a code-based visual narrative website
-                                    titled
-                                    “about Me, You, & Us.” This example will act as a utility for artists, designers,
-                                    activists,
-                                    and
-                                    coders on learning how to narrate and visualize stories to advocate for important
-                                    topics
-                                    using
-                                    p5.js.</p>
+                                <p class="section-description">As a beginner coder, this was an amazing opportunity to
+                                    continue learning and advancing in creative coding. I always find it incredibly
+                                    helpful to have mentors and teachers who can guide you through having a better
+                                    understanding of the processing environment. It was also a great experience to
+                                    contribute to open-source processing and be a part of public discourse to solve
+                                    issues and help the processing community.</p>
+                                <p>This project has allowed me to have a better idea of what I could do with creative
+                                    coding. Now I feel that another career path besides Graphic Design has opened up to
+                                    me. I hope to continue creating collaborative projects with programming and further
+                                    contribute to the open-source creative coding community. </p>
                                 <div class="section-link">
                                     <a class="button button-primary" href="conceptual.html">Read Chapter: Concepts</a>
                                 </div>
