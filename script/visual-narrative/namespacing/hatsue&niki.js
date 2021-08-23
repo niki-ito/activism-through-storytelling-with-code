@@ -213,17 +213,76 @@ p.incertInteractiveImages = (imageNumber) => {
   p.tint3 = p.map(p.mouseX+(p.mouseY)*-1, p.width-100, 0, 255, 0);
   p.tint4 = p.map(p.mouseY-(p.mouseX)*-1, p.width-100, 0, 255, 0);
   
-  p.tint(255,p.tint4);
-  p.image(imageNumber[3], 0, 0, p.width, p.height);
   
-  p.tint(255, p.tint1);  
-  p.image(imageNumber[0], 0, 0, p.width, p.height);
+  // p.tint(255,p.tint4);
+  // p.image(imageNumber[3], 0, 0, p.width, p.height);
   
-  p.tint(255, p.tint2);
-  p.image(imageNumber[1], 0, 0, p.width, p.height);
+  // p.tint(255, p.tint1);  
+  // p.image(imageNumber[0], 0, 0, p.width, p.height);
   
-  p.tint(255,p.tint3);
-  p.image(imageNumber[2], 0, 0, p.width, p.height);  
+  // p.tint(255, p.tint2);
+  // p.image(imageNumber[1], 0, 0, p.width, p.height);
+  
+  // p.tint(255,p.tint3);
+  // p.image(imageNumber[2], 0, 0, p.width, p.height);  
+ 
+  console.log(p.img1);
+  console.log(p.img1[0]);
+  console.log(p.img1[3]);
+
+  if (p.display === 1) {
+    p.tint(255,p.tint4);
+    p.image(p.img1[3], 0, 0, p.width, p.height);
+    
+    p.tint(255, p.tint1);  
+    p.image(p.img1[0], 0, 0, p.width, p.height);
+    
+    p.tint(255, p.tint2);
+    p.image(p.img1[1], 0, 0, p.width, p.height);
+    
+    p.tint(255,p.tint3);
+    p.image(p.img1[2], 0, 0, p.width, p.height);   
+
+  } else if (p.display === 2) {
+    p.tint(255,p.tint4);
+    p.image(p.img2[3], 0, 0, p.width, p.height);
+    
+    p.tint(255, p.tint1);  
+    p.image(p.img2[0], 0, 0, p.width, p.height);
+    
+    p.tint(255, p.tint2);
+    p.image(p.img2[1], 0, 0, p.width, p.height);
+    
+    p.tint(255,p.tint3);
+    p.image(p.img2[2], 0, 0, p.width, p.height); 
+
+  } else if (p.display === 3) {
+    p.tint(255,p.tint4);
+    p.image(p.img3[3], 0, 0, p.width, p.height);
+    
+    p.tint(255, p.tint1);  
+    p.image(p.img3[0], 0, 0, p.width, p.height);
+    
+    p.tint(255, p.tint2);
+    p.image(p.img3[1], 0, 0, p.width, p.height);
+    
+    p.tint(255,p.tint3);
+    p.image(p.img3[2], 0, 0, p.width, p.height);  
+
+  } else if (p.display === 4) {
+    p.tint(255,p.tint4);
+    p.image(p.img4[3], 0, 0, p.width, p.height);
+    
+    p.tint(255, p.tint1);  
+    p.image(p.img4[0], 0, 0, p.width, p.height);
+    
+    p.tint(255, p.tint2);
+    p.image(p.img4[1], 0, 0, p.width, p.height);
+    
+    p.tint(255,p.tint3);
+    p.image(p.img4[2], 0, 0, p.width, p.height);  
+  }
+
 }
 
 class ElementsForSketch {
@@ -287,7 +346,8 @@ class ElementsForSketch {
       p.button.html("&#9654");
     }
   }
- 
+
+
   timeSubtitles(audioNumber) {
     for (let i = 0; i < this.subtitleArrayFunction.length; i ++){
       if (audioNumber.currentTime()>=this.subtitleCueArrayFunction[i]){

@@ -48,7 +48,7 @@ const sketch2 = function(p){
   p.display = 1;
 
 p.preload = () => {
-  
+
  for (let i=1; i<4; i++) {
     p.img1.push(p.loadImage("../assets/images/visual-narrative/joe&hatsue/img1_"+i+".jpg"));
     p.img2.push(p.loadImage("../assets/images/visual-narrative/joe&hatsue/img2_"+i+".jpg"));
