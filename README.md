@@ -1,7 +1,7 @@
 # Acitvism Through Storytelling with Code
 The project “Activism Through Storytelling with Code” was created by Niki Ito as a part of the Google Summer of Code 2021. Google Summer of Code is a global program that pairs students with mentors to develop a 10-week programming project and learn about open-source software development.
 
-For this project, I worked with the Processing Foundation to help develop and expand Processing and p5.js to be more accessible and inclusive for artists, designers, educators, and beginners. With guidance from my mentors Elgin-Skye McLaren and Grace Kwon, I developed this project which focuses on art, coding, and identity/community. The project includes a visual narrative website “about Me You & Us,” a Project Handbook, and this GitHub Repository with all the project files.
+For this project, she worked with the Processing Foundation to help develop and expand Processing and p5.js to be more accessible and inclusive for artists, designers, educators, and beginner coders. With guidance from her mentors Elgin-Skye McLaren and Grace Kwon, Niki developed this project which focuses on art, coding, and identity/community. The project includes a visual narrative website “about Me You & Us,” a Project Handbook, and this GitHub Repository with all the project files.
 ## Examples
 p5.js sketches: <br>
 Example 1:<a href ="https://niki-ito.github.io/activism-through-storytelling-with-code/example-sketches/example-1.html" target = "_blank"> Still-Life </a><br>
