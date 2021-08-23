@@ -48,17 +48,17 @@ const sketch2 = function(p){
   p.display = 1;
 
 p.preload = () => {
-  p.myAudio1 = p.loadSound("../assets/audio/visual-narrative/names.mp3");
-  p.myAudio2 = p.loadSound("../assets/audio/visual-narrative/born.mp3");
-  p.myAudio3 = p.loadSound("../assets/audio/visual-narrative/agency.mp3");
-  p.myAudio4 = p.loadSound("../assets/audio/visual-narrative/male.mp3");
-
-  for (let i=1; i<4; i++) {
+  
+ for (let i=1; i<4; i++) {
     p.img1.push(p.loadImage("../assets/images/visual-narrative/joe&hatsue/img1_"+i+".jpg"));
     p.img2.push(p.loadImage("../assets/images/visual-narrative/joe&hatsue/img2_"+i+".jpg"));
     p.img3.push(p.loadImage("../assets/images/visual-narrative/joe&hatsue/img3_"+i+".jpg"));
     p.img4.push(p.loadImage("../assets/images/visual-narrative/joe&hatsue/img4_"+i+".jpg"));
   }
+  p.myAudio1 = p.loadSound("../assets/audio/visual-narrative/names.mp3");
+  p.myAudio2 = p.loadSound("../assets/audio/visual-narrative/born.mp3");
+  p.myAudio3 = p.loadSound("../assets/audio/visual-narrative/agency.mp3");
+  p.myAudio4 = p.loadSound("../assets/audio/visual-narrative/male.mp3");
 }
 
 p.setup = () => {
