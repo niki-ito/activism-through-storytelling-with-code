@@ -17,6 +17,11 @@ The visual narrative website includes audio-based p5.js sketches that showcase i
 <a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/handbook/index.html" target = "_blank">Activism Through Storytelling with Code: a step-by-step guide</a><br>
 The handbook is organized into two main chapters: concepts and technical strategies for the visual narrative website “about Me You & Us.” The concepts chapter includes the purpose, struggles & solutions, and research. The technical strategies chapter includes visual strategies such as audio, photography, illustration as well as coding strategies within the p5.js editor and on the website. 
 
+## Getting Started
+To run the code locally:
+- Download this project repository.
+- Use Visual Studio Code and download the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server extention</a> to view the website on your local development environment.
+
 ## Weekly Documentations
 Community bonding week: 
 - Introductions with mentors.
