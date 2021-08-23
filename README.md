@@ -13,6 +13,8 @@ Example 4:<a href ="https://niki-ito.github.io/activism-through-storytelling-wit
 <a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/" target = "_blank">About Me, You, & Us</a><br>
 The visual narrative website includes audio-based p5.js sketches that showcase intimate narratives collected from conversations within the Japanese diaspora in the United States.
 
+* A few browser errors are currently under cunstruction. If images for the visual narratives do not show, please refresh the browser. For more details see <a href="https://github.com/niki-ito/activism-through-storytelling-with-code/issues/3">this issue</a> post.
+
 ## Handbook
 <a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/handbook/index.html" target = "_blank">Activism Through Storytelling with Code: a step-by-step guide</a><br>
 The handbook is organized into two main chapters: concepts and technical strategies for the visual narrative website “about Me You & Us.” The concepts chapter includes the purpose, struggles & solutions, and research. The technical strategies chapter includes visual strategies such as audio, photography, illustration as well as coding strategies within the p5.js editor and on the website. 
