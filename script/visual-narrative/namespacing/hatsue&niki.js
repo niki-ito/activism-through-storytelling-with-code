@@ -49,6 +49,7 @@ const sketch2 = function(p){
 
 p.preload = () => {
 
+//load the images within a loop to have a more condensed code
 for (let i=1; i<5; i++) {
   p.img1.push(p.loadImage("../assets/images/visual-narrative/hatsue&niki/img1_"+i+".jpg"));
   p.img2.push(p.loadImage("../assets/images/visual-narrative/hatsue&niki/img2_"+i+".jpg"));
@@ -63,6 +64,7 @@ for (let i=1; i<5; i++) {
 }
 
 p.setup = () => {
+//use DOM p5 elements. reference: https://p5js.org/reference/#/p5.Element
   p.canvas = p.createCanvas(800, 800);
   p.canvas.style("width", "90%");
   p.canvas.style("height", "auto");
@@ -281,6 +283,7 @@ p.incertInteractiveImages = (imageNumber) => {
 
 }
 
+//Object oriented programming. Creating a class for the varying elements of the sketch
 class ElementsForSketch {
   constructor(subtitleArrayFunction,subtitleCueArrayFunction) {
     this.subtitleArrayFunction = subtitleArrayFunction;
@@ -359,6 +362,7 @@ class ElementsForSketch {
 
 }
 
+//these functions are called in draw()
 p.drawButtons = () => {
   //create and style the play button
   p.button = p.createButton("&#9654");
@@ -411,6 +415,8 @@ p.incertCue = () => {
 
 }
 
+//create the background p5 canvas
 let myp5Background = new p5(sketch1); 
 
+//create the audio visualization p5 canvas 
 let myp5canvas = new p5(sketch2); 
