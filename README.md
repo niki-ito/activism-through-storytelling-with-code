@@ -1,4 +1,7 @@
 # Acitvism Through Storytelling with Code
+The project “Activism Through Storytelling with Code” was created by Niki Ito as a part of the Google Summer of Code 2021. Google Summer of Code is a global program that pairs students with mentors to develop a 10-week programming project and learn about open-source software development.
+
+For this project, I worked with the Processing Foundation to help develop and expand Processing and p5.js to be more accessible and inclusive for artists, designers, educators, and beginners. With guidance from my mentors Elgin-Skye McLaren and Grace Kwon, I developed this project which focuses on art, coding, and identity/community. The project includes a visual narrative website “about Me You & Us,” a Project Handbook, and this GitHub Repository with all the project files.
 ## Examples
 p5.js sketches: <br>
 Example 1:<a href ="https://niki-ito.github.io/activism-through-storytelling-with-code/example-sketches/example-1.html" target = "_blank"> Still-Life </a><br>
@@ -7,10 +10,12 @@ Example 3:<a href ="https://niki-ito.github.io/Artist-Activists-Interactive-Port
 Example 4:<a href ="https://niki-ito.github.io/activism-through-storytelling-with-code/example-sketches/example-4.html" target = "_blank"> Visual Narrative Draft</a><br>
 
 ## Visual Narrative Website
-<a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/" target = "_blank">About Me, You, & Us</a>
+<a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/" target = "_blank">About Me, You, & Us</a><br>
+The visual narrative website includes audio-based p5.js sketches that showcase intimate narratives collected from conversations within the Japanese diaspora in the United States.
 
 ## Handbook
-<a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/handbook/index.html" target = "_blank">Activism Through Storytelling with Code: a step-by-step guide</a>
+<a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/handbook/index.html" target = "_blank">Activism Through Storytelling with Code: a step-by-step guide</a><br>
+The handbook is organized into two main chapters: concepts and technical strategies for the visual narrative website “about Me You & Us.” The concepts chapter includes the purpose, struggles & solutions, and research. The technical strategies chapter includes visual strategies such as audio, photography, illustration as well as coding strategies within the p5.js editor and on the website. 
 
 ## Weekly Documentations
 Community bonding week: 
