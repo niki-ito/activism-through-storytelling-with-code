@@ -370,7 +370,7 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: tomato;
+  background-color: #ff6347;
   border-color: tomato; }
 .button.button-primary:hover,
 button.button-primary:hover,
