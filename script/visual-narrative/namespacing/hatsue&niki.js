@@ -43,6 +43,7 @@ const sketch2 = function(p){
   p.img2 = [];
   p.img3 = [];
   p.img4 = [];
+  p.testImage;
   
   p.elementsForSketchArray = [];
   p.display = 1;
@@ -56,6 +57,7 @@ for (let i=1; i<5; i++) {
   p.img3.push(p.loadImage("../assets/images/visual-narrative/hatsue&niki/img3_"+i+".jpg"));
   p.img4.push(p.loadImage("../assets/images/visual-narrative/hatsue&niki/img4_"+i+".jpg"));
 }
+  p.testImage = p.loadImage("../assets/images/visual-narrative/hatsue&niki/img4_1.jpg")
   p.myAudio1 = p.loadSound("../assets/audio/visual-narrative/different.mp3");
   p.myAudio2 = p.loadSound("../assets/audio/visual-narrative/smells.mp3");
   p.myAudio3 = p.loadSound("../assets/audio/visual-narrative/confident.mp3");
@@ -156,7 +158,11 @@ p.createNewElementsForSketch = () => {
 p.draw = () => {
   p.background(255);
 
-  p.displayImgTimerSubtitle();
+//logic to fix preload error
+  if(p.img1[0] != null ){
+    p.displayImgTimerSubtitle();
+  }
+
   //audio visualizer
   p.spectrum = p.fft.analyze();
   p.noStroke();
@@ -228,62 +234,10 @@ p.incertInteractiveImages = (imageNumber) => {
   p.tint(255,p.tint3);
   p.image(imageNumber[2], 0, 0, p.width, p.height);  
 
-  // if (p.display === 1) {
-  //   p.tint(255,p.tint4);
-  //   p.image(p.img1[3], 0, 0, p.width, p.height);
-    
-  //   p.tint(255, p.tint1);  
-  //   p.image(p.img1[0], 0, 0, p.width, p.height);
-    
-  //   p.tint(255, p.tint2);
-  //   p.image(p.img1[1], 0, 0, p.width, p.height);
-    
-  //   p.tint(255,p.tint3);
-  //   p.image(p.img1[2], 0, 0, p.width, p.height);   
-
-  // } else if (p.display === 2) {
-  //   p.tint(255,p.tint4);
-  //   p.image(p.img2[3], 0, 0, p.width, p.height);
-    
-  //   p.tint(255, p.tint1);  
-  //   p.image(p.img2[0], 0, 0, p.width, p.height);
-    
-  //   p.tint(255, p.tint2);
-  //   p.image(p.img2[1], 0, 0, p.width, p.height);
-    
-  //   p.tint(255,p.tint3);
-  //   p.image(p.img2[2], 0, 0, p.width, p.height); 
-
-  // } else if (p.display === 3) {
-  //   p.tint(255,p.tint4);
-  //   p.image(p.img3[3], 0, 0, p.width, p.height);
-    
-  //   p.tint(255, p.tint1);  
-  //   p.image(p.img3[0], 0, 0, p.width, p.height);
-    
-  //   p.tint(255, p.tint2);
-  //   p.image(p.img3[1], 0, 0, p.width, p.height);
-    
-  //   p.tint(255,p.tint3);
-  //   p.image(p.img3[2], 0, 0, p.width, p.height);  
-
-  // } else if (p.display === 4) {
-  //   p.tint(255,p.tint4);
-  //   p.image(p.img4[3], 0, 0, p.width, p.height);
-    
-  //   p.tint(255, p.tint1);  
-  //   p.image(p.img4[0], 0, 0, p.width, p.height);
-    
-  //   p.tint(255, p.tint2);
-  //   p.image(p.img4[1], 0, 0, p.width, p.height);
-    
-  //   p.tint(255,p.tint3);
-  //   p.image(p.img4[2], 0, 0, p.width, p.height);  
-  // }
-
 }
 
-//Object oriented programming. Creating a class for the varying elements of the sketch
+//Object oriented programming. Creating a class for the varying elements of the sketch: 
+//switching audio & subtitle content
 class ElementsForSketch {
   constructor(subtitleArrayFunction,subtitleCueArrayFunction) {
     this.subtitleArrayFunction = subtitleArrayFunction;

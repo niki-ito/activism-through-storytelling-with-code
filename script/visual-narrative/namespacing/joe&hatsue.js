@@ -153,7 +153,10 @@ p.createNewElementsForSketch = () => {
 p.draw = () => {
   p.background(255);
 
+//logic to fix preload error
+if(p.img1[0] != null ){
   p.displayImgTimerSubtitle();
+}
   //audio visualizer
   p.spectrum = p.fft.analyze();
   p.noStroke();
