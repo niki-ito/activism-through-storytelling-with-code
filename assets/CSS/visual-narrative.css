@@ -145,6 +145,9 @@ nav h5 {
 
 #defaultCanvas0{
   visibility: visible;
+}
+
+#defaultCanvas1{
   visibility: hidden;
   position: absolute; 
   top: 0;
