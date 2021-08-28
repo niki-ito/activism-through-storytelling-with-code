@@ -216,6 +216,9 @@ p.displayImgTimerSubtitle = () =>{
 p.incertInteractiveImages = (imageNumber) => {
   p.tint1,p.tint2,p.tint3,p.tint4;
 
+// create a tint value for each image that shows the image when the cursor 
+// is at one corner and hides the image as the cursor moves away.
+
   p.tint1 = p.map(p.mouseX+p.mouseY, 100, p.width, 255, 0);
   p.tint2 = p.map((p.mouseX)*-1+p.mouseY, p.width-100, 0, 255, 0);
   p.tint3 = p.map(p.mouseX+(p.mouseY)*-1, p.width-100, 0, 255, 0);
