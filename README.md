@@ -22,7 +22,7 @@ To run the code locally:
 - Download this project repository.
 - Use Visual Studio Code and download the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server extention</a> to view the website on your local development environment.
 
-## Acknowledgements
+## Acknowledgments
 I feel very grateful to have had such amazing support during the development of this project. First and foremost, I would like to extend my deepest gratitude to my mentors Elgin-Skye McLaren and Grace Kwon who have been extremely helpful from start to finish. Every time after meetings with my mentors, I felt so inspired and motivated to move forward. 
 
 Furthermore, I would like to thank Japanese American photographer HATSUE and Japanese American art historian Joe who volunteered their time and thoughts to my project and became a part of the recorded conversations and visual narratives. I would also like to thank Japanese ceramic artist Miwa Neishi who introduced me to my new HATSUE and supported me from the very beginning. Additionally, I would like to thank professor Sherry Muyuan He who would spend long meeting sessions with me to support and inspire me when I felt unsure. I would also like to thank photographer Kestin Mica who contributed his amazing photography skills and became a partner in this project. Finally, I am extremely grateful for my programming professor Stalgia Grigg who introduced me to creative coding and Google Summer of Code.  
