@@ -14,6 +14,8 @@ Example 4:<a href ="https://niki-ito.github.io/activism-through-storytelling-wit
 ### <a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/" target = "_blank">About Me, You, & Us</a><br>
 The visual narrative website includes audio-based p5.js sketches that showcase intimate narratives collected from conversations within the Japanese diaspora in the United States.
 
+If you are interested in seeing the script files with the p5.js sketches, you can view them <a href="https://github.com/niki-ito/activism-through-storytelling-with-code/tree/main/script/visual-narrative/namespacing" target="_blank">here</a> by clicking on one of the script files.
+
 ## Project Handbook
 ![Website Screenshot](/assets/images/handbook/handbook.jpg)<br>
 ### <a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/handbook/index.html" target = "_blank">Activism Through Storytelling with Code: a step-by-step guide</a><br>
