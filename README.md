@@ -10,15 +10,16 @@ Example 3:<a href ="https://niki-ito.github.io/Artist-Activists-Interactive-Port
 Example 4:<a href ="https://niki-ito.github.io/activism-through-storytelling-with-code/example-sketches/example-4.html" target = "_blank"> Visual Narrative Draft</a><br>
 
 ## Visual Narrative Website
-![Website GIF](/assets/images/handbook/visual-narrative_gif.gif)
-![Website final layouts](/assets/images/handbook/website-layout.jpg)
+![Website GIF](https://github.com/niki-ito/activism-through-storytelling-with-code/blob/main/assets/images/handbook/visual-narrative_gif.gif)
+![Website final layouts](https://github.com/niki-ito/activism-through-storytelling-with-code/blob/main/assets/images/handbook/website-layout.jpg)<br>
 <a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/" target = "_blank">About Me, You, & Us</a><br>
 The visual narrative website includes audio-based p5.js sketches that showcase intimate narratives collected from conversations within the Japanese diaspora in the United States.
 
 If you are interested in seeing the script files with the p5.js sketches, you can view them <a href="https://github.com/niki-ito/activism-through-storytelling-with-code/tree/main/script/visual-narrative/namespacing" target="_blank">here</a> by clicking on one of the script files.
 
 ## Project Handbook
-![Handbook Screenshots](/assets/images/handbook/handbook.png)
+![Handbook Scroll](https://github.com/niki-ito/activism-through-storytelling-with-code/blob/main/assets/images/visual-narrative/handbook-scroll.gif)
+![Website Screenshot](https://github.com/niki-ito/activism-through-storytelling-with-code/blob/main/assets/images/handbook/handbook.jpg)<br>
 <a href = "https://niki-ito.github.io/activism-through-storytelling-with-code/handbook/index.html" target = "_blank">Activism Through Storytelling with Code: a step-by-step guide</a><br>
 The handbook is organized into two main chapters: concepts and technical strategies for the visual narrative website “about Me You & Us.” The concepts chapter includes the purpose, struggles & solutions, and research. The technical strategies chapter includes visual strategies such as audio, photography, illustration as well as coding strategies within the p5.js editor and on the website. 
 
